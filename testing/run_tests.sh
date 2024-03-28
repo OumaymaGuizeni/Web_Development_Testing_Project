@@ -4,10 +4,8 @@
 # this script will be used in the pipeline CI/CD of the Project 
 # this script is changed by a UI that handeles this for tester from 26 mars 2024
 
-echo "Start Running All test Cases " 
+echo " Start Running All test Cases Based on Your Request " 
 echo "*****************************"
-echo "Launching the Server Of the website"
-echo "-----------------------------------"
 
 
 # Function to run Robot Framework tests

@@ -61,9 +61,9 @@ Check Presence Of Rania Box In Our Team Page
 Check Presence Of Emna Box In Our Team Page
     [Documentation]     this Keywords aims to check the Presence Of Emna Box inside our team page
 
-    Log    message="checking CHECK_EMNA_INFO_BOX text in page"    console=True
+    Log    message=CHECKING <CHECK_EMNA_INFO_BOX> TEXT IN PAGE          console=True
     Run keyword and continue on failure        Page Should Contain       ${CHECK_EMNA_INFO_BOX_TEXT}
-    Log    message="checking CHECK_EMNA_IMAGE image in page"    console=True
+    Log    message=CHECKING <CHECK_EMNA_IMAGE> IMAGE IN PAGE    console=True
     Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_EMNA_IMAGE_XPATH}
     Capture Page Screenshot     filename=Emna_BOX
 

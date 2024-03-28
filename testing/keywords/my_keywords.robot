@@ -52,9 +52,9 @@ Check Presence Of Oumayma Box In Our Team Page
 Check Presence Of Rania Box In Our Team Page 
     [Documentation]     this Keywords aims to check the Presence Of Rania Box inside our team page
 
-    Log    message="checking CHECK_RANIA_INFO_BOX text in page"    console=True 
+    Log    message=CHECKING <CHECK_RANIA_INFO_BOX> TEXT IN PAGE"        console=True 
     Run keyword and continue on failure        Page Should Contain       ${CHECK_RANIA_INFO_BOX_TEXT}
-    Log    message="checking CHECK_RANIA_IMAGE image in page"    console=True
+    Log    message=CHECKING <CHECK_RANIA_IMAGE> IMAGE IN PAGE           console=True
     Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_RANIA_IMAGE_XPATH}
     Capture Page Screenshot     filename=Rania_BOX
 

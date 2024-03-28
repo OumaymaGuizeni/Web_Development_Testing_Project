@@ -15,7 +15,7 @@ Test_our_team_page
     
     open my website on specific browser    wait_time=5
     maximize my web site on the specific browser
-    Click On Specific Element    Element_Xpath=${OUR_TEAM_BUTTON}    WAIT_TIME=5
+    Click On Specific Element    Element_Xpath=${OUR_TEAM_BUTTON_XPATH}     WAIT_TIME=5
     check our team page
     
     

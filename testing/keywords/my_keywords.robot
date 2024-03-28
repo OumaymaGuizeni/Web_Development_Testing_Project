@@ -40,58 +40,99 @@ Click On Specific Element
     Click Element    xpath=${Element_Xpath}
     Sleep   ${WAIT_TIME}
 
+Check Presence Of Oumayma Box In Our Team Page
+    [Documentation]     this Keywords aims to check the Presence Of Oumayma Box inside our team page
+
+    Log    message="checking CHECK_OUMAYMA_INFO_BOX text in page"    console=True
+    Run keyword and continue on failure        Page Should Contain       ${CHECK_OUMAYMA_INFO_BOX_TEXT}
+    Log    message="checking CHECK_OUMAYMA_IMAGE image in page"    console=True
+    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_OUMAYMA_IMAGE_XPATH} 
+    Capture Page Screenshot     filename=Oumayma_BOX
+
+Check Presence Of Rania Box In Our Team Page 
+    [Documentation]     this Keywords aims to check the Presence Of Rania Box inside our team page
+
+    Log    message="checking CHECK_RANIA_INFO_BOX text in page"    console=True 
+    Run keyword and continue on failure        Page Should Contain       ${CHECK_RANIA_INFO_BOX_TEXT}
+    Log    message="checking CHECK_RANIA_IMAGE image in page"    console=True
+    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_RANIA_IMAGE_XPATH}
+    Capture Page Screenshot     filename=Rania_BOX
+
+Check Presence Of Emna Box In Our Team Page
+    [Documentation]     this Keywords aims to check the Presence Of Emna Box inside our team page
+
+    Log    message="checking CHECK_EMNA_INFO_BOX text in page"    console=True
+    Run keyword and continue on failure        Page Should Contain       ${CHECK_EMNA_INFO_BOX_TEXT}
+    Log    message="checking CHECK_EMNA_IMAGE image in page"    console=True
+    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_EMNA_IMAGE_XPATH}
+    Capture Page Screenshot     filename=Emna_BOX
+
+Check Presence Of Mohamed Box In Our Team Page
+    [Documentation]     this Keywords aims to check the Presence Of Mohamed Box inside our team page
+
+    Log    message="checking CHECK_MOHAMED_INFO_BOX text in page"    console=True
+    Run keyword and continue on failure        Page Should Contain      ${CHECK_MOHAMED_INFO_BOX_TEXT} 
+    Log    message="checking CHECK_MOHAMED_IMAGE image in page"    console=True
+    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_MOHAMED_IMAGE_XPATH}
+    Capture Page Screenshot     filename=Mohamed_BOX
+
+Check Presence Of Eya Box In Our Team Page
+    [Documentation]     this Keywords aims to check the Presence Of Eya Box inside our team page
+
+    Log    message="checking CHECK_EYA_INFO_BOX text in page"    console=True
+    Run keyword and continue on failure        Page Should Contain      ${CHECK_EYA_INFO_BOX_TEXT} 
+    Log    message="checking CHECK_EYA_IMAGE image in page"    console=True
+    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_EYA_IMAGE_XPATH}
+    Capture Page Screenshot     filename=Eya_BOX
+
+Check Presence Of Zoubaida Box In Our Team Page
+    [Documentation]     this Keywords aims to check the Presence Of Zoubaida Box inside our team page
+
+    Log    message="checking CHECK_ZOUBAIDA_INFO_BOX text in page"    console=True
+    Run keyword and continue on failure        Page Should Contain      ${CHECK_ZOUBAIDA_INFO_BOX_TEXT} 
+    Log    message="checking CHECK_ZOUBAIDA_IMAGE image in page"    console=True
+    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_ZOUBAIDA_IMAGE_XPATH}
+    Capture Page Screenshot     filename=Zoubaida_BOX
+
+Check Presence Of Chedi Box In Our Team Page
+    [Documentation]     this Keywords aims to check the Presence Of Chedi Box inside our team page
+
+    Log    message="checking CHECK_CHEDI_INFO_BOX text in page"    console=True
+    Run keyword and continue on failure        Page Should Contain      ${CHECK_CHEDI_INFO_BOX_TEXT} 
+    Log    message="checking CHECK_CHEDI_IMAGE image in page"    console=True
+    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_CHEDI_IMAGE_XPATH}
+    Capture Page Screenshot     filename=Chedi_BOX
+
 check our team page
     [Documentation]    this keyword aims to check the elements in our team page
-    Sleep    8s
-    Run keyword and continue on failure        Page Should Contain       ${CHECK_OUMAYMA_INFO_BOX}
-    Log    message="checking CHECK_OUMAYMA_INFO_BOX text in page"    console=True
-    Capture Page Screenshot                    
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_OUMAYMA_IMAGE}
-    Log    message="checking CHECK_OUMAYMA_IMAGE image in page"    console=True  
+    Log     message="WAITING FOR 8 SECONDS TO RENDER OUT TEAM PAGE"     console=true
+    Sleep    8s  
+    Check Presence Of Oumayma box in our team page
+    Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
     Scroll web Page    pixel_number=400
     Sleep    8s
-    Run keyword and continue on failure        Page Should Contain       ${CHECK_RANIA_INFO_BOX}
-    Log    message="checking CHECK_RANIA_INFO_BOX text in page"    console=True 
-    Capture Page Screenshot
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_RANIA_IMAGE}
-    Log    message="checking CHECK_RANIA_IMAGE image in page"    console=True
+    Check Presence Of Rania Box In Our Team Page
+    Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
     Scroll web Page    pixel_number=1000
     Sleep    8s
-    Run keyword and continue on failure        Page Should Contain       ${CHECK_EMNA_INFO_BOX}
-    Log    message="checking CHECK_EMNA_INFO_BOX text in page"    console=True
-    Capture Page Screenshot
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_EMNA_IMAGE}
-    Log    message="checking CHECK_EMNA_IMAGE image in page"    console=True
+    Check Presence Of Emna Box In Our Team Page
+    Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
     Scroll web Page    pixel_number=1500
     Sleep    8s
-    Run keyword and continue on failure        Page Should Contain      ${CHECK_MOHAMED_INFO_BOX}
-    Log    message="checking CHECK_MOHAMED_INFO_BOX text in page"    console=True
-    Capture Page Screenshot
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_MOHAMED_IMAGE}
-    Log    message="checking CHECK_MOHAMED_IMAGE image in page"    console=True
+    Check Presence Of Mohamed Box In Our Team Page
+    Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
     Scroll web Page    pixel_number=1900
     Sleep    8s
-    Run keyword and continue on failure        Page Should Contain       ${CHECK_EYA_INFO_BOX}
-    Log    message="checking CHECK_EYA_INFO_BOX text in page"    console=True
-    Capture Page Screenshot
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_EYA_IMAGE}
-    Log    message="checking CHECK_EYA_IMAGE image in page"    console=True
+    Check Presence Of Eya Box In Our Team Page
+    Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
     Scroll web Page    pixel_number=2300
     Sleep    8s
-    Run keyword and continue on failure        Page Should Contain       ${CHECK_ZOUBAIDA_INFO_BOX}
-    Log    message="checking CHECK_ZOUBAIDA_INFO_BOX text in page"    console=True
-    Capture Page Screenshot
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_ZOUBAIDA_IMAGE}
-    Log    message="checking CHECK_ZOUBAIDA_IMAGE image in page"    console=True
+    Check Presence Of Zoubaida Box In Our Team Page
+    Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
     Scroll web Page    pixel_number=2800
     Sleep    8s
-    Run keyword and continue on failure        Page Should Contain       ${CHECK_CHEDI_INFO_BOX}
-    Log    message="checking CHECK_CHEDI_INFO_BOX text in page"    console=True
-    Capture Page Screenshot
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_CHEDI_IMAGE}
-    Log    message="checking CHECK_CHEDI_IMAGE image in page"    console=True
-    Scroll web Page    
-    Sleep    8s
+    Check Presence Of Chedi Box In Our Team Page
+
 
 Scroll web Page  
     [Arguments]    ${scroll_direction}=Down    ${with_Javascript}=Yes    ${pixel_number}=500

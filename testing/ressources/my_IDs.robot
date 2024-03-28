@@ -7,11 +7,14 @@ Resource    ../keywords/my_keywords.robot
 
 
 *** Variables ***
+
+# ------------- Variables for Project Configuration --------------------------
 ${MY_WEBSITE_URL}    http://127.0.0.1:5000/
 ${MY_BROWSER_1}    firefox
 ${MY_BROWSER_2}    chrome
 
 # ------------ Variables For index Page Section -----------------------------
+
 ${HOME_BUTTON_TEXT}                        HOME
 ${OUR_TEAM_BUTTON_TEXT}                    OUR_TEAM
 ${CONTENT_BUTTON_TEXT}                     CONTENT
@@ -32,7 +35,7 @@ ${CHECK_CHEDI_INFO_BOX_TEXT}               Chedi Ahmed
 ${CHECK_OUMAYMA_IMAGE_XPATH}                /html/body/div[2]/div/div/div[2]/img
 ${CHECK_RANIA_IMAGE_XPATH}                  /html/body/div[3]/div/div/div[1]/img
 ${CHECK_EMNA_IMAGE_XPATH}                   /html/body/div[4]/div/div/div[2]/img               
-${CHECK_MOHAMED_IMAGE_XPATH}                /html/body/div[5]/div/div/div[1]/img           
+${CHECK_MOHAMED_IMAGE_XPATH}                /html/body/div[5]/div/div/div[1]/img          
 ${CHECK_EYA_IMAGE_XPATH}                    /html/body/div[6]/div/div/div[2]/img
 ${CHECK_ZOUBAIDA_IMAGE_XPATH}               /html/body/div[7]/div/div/div[1]/img
 ${CHECK_CHEDI_IMAGE_XPATH}                  /html/body/div[8]/div/div/div[2]/img

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual_Testing</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/ehwliTbTSTW7T33U_Rir2pJfPoBPYCsYGStNxqnoBHR0pICIjZ9CWJ0hMQTB52-kXk8" type="image/x-icon">
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e7efc7;
+}
+h1{
+    text-align: center;
+    background-color: rgb(192, 216, 165);
+}
+p{
+    padding-left: 15px;
+}
+.image img{
+    width: 50%;
+    margin: 30px auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+} 
+.image p{
+    padding-left: 600px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+ol{
+    list-style-type: decimal;
+}
+ul {
+    list-style-type: disc; 
+}
+table {        
+    width: 70%;
+    margin: 30px auto; 
+    border-collapse:separate;
+    background-color: #000;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    background-color: #e7efc7;
+}
+th {
+    background-color: rgba(160, 215, 102);
+}
+.back-button {
+    position: absolute;
+    top: 7px; 
+    left: 10px; 
+    padding: 5px 10px; 
+    background-color: #f0f0f0; 
+    color: #000; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+}
+.back-button:hover {
+    background-color: rgba(160, 215, 102);
+    color: #000;
+}
+    </style>
+</head>
+<body>
+
+<!--White box testing-->
+    <section id="White_Box_Testing">
+        <h1>White Box Testing</h1>
+        <a href="javascript:history.back()" class="back-button">&#9664; Back</a>
+        <h3>Definition</h3>
+        <p>White box testing techniques delve into the internal structures of software, including data structures, code design, and functionality, unlike black box testing which primarily focuses on functionality alone. Also referred to as glass box testing or clear box testing, white box testing examines the software's inner workings. It's alternatively termed transparent testing or open box testing.
+           White box testing is a software testing approach where the tester scrutinizes the internal structure and mechanisms of a software application. With access to the source code, testers devise test cases to validate the accuracy of the software at a code level.
+           Known as structural testing or code-based testing, white box testing evaluates the software's internal logic, flow, and structure. Testers develop test cases to assess code paths and logic flows, ensuring they align with specified requirements.
+        </p>
+    </section>
+    <section>
+        <h3>Process of White Box Testing</h3>
+        <ol>
+            <li>Input: The input includes requirements, functional specifications, design documents, and the source code of the software.</li>
+            <li>Processing: Conducting risk analysis to provide guidance throughout the entire testing process.</li>
+            <li>Proper Test Planning: Creating test cases that encompass the entirety of the codebase. Iterating through the execution process until the software is error-free. Additionally, communicating the results of the testing process.</li>
+            <li>Output: Generating the final report summarizing the entire testing procedure.</li>
+        </ol>
+    </section>
+    <section>
+        <h3>Required Tools for White Box Testing</h3>
+        <ol>
+            <li>Tester should understand the code well</li>
+            <li>Tester should write some code for test cases and execute them using:</li>
+        </ol>
+        <ul>
+            <li>PyUnit</li>
+            <li>Sqlmap</li>
+            <li>Parasoft Jtest</li>
+            <li>VeraUnit</li>
+            <li>CppUnit</li>
+            <li>Bugzilla</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Advantages & Disadvantages</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Advantages of White Box Testing</th>
+                    <th>Disadvantages of White Box Testing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h6>Thorough Coverage:</h6>Since the tester has access to the internal code, it allows for comprehensive testing of all code paths and logic flows.</td>
+                    <td><h6>Dependency on Implementation:</h6>Testing is heavily reliant on the understanding of the internal code structure, which may lead to biased testing or overlooking certain scenarios.</td>
+                </tr>
+                <tr>
+                    <td><h6>Early Detection of Defects:</h6>Identifying bugs at the code level enables early detection and rectification, reducing the likelihood of more severe issues later in the development cycle.</td>
+                    <td><h6>Time-Consuming:</h6>Designing test cases at the code level can be time-consuming, especially for complex software systems with extensive codebases.</td>
+                </tr>
+                <tr>
+                    <td><h6>Optimized Test Cases:</h6>Test cases can be designed to target specific code segments, resulting in more efficient and effective testing.</td>
+                    <td><h6>Limited Scope:</h6>White box testing focuses primarily on internal logic and structure, potentially overlooking higher-level system requirements or user perspectives.</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+<!--Black box testing-->
+    <section id="Black_Box_Testing">
+        <h1>Black Box Testing</h1>
+        <h3>Definition</h3>
+        <p>Black-box testing is a software testing method where the tester evaluates the functionality of the software solely based on the provided specifications or requirements, without delving into its internal workings or implementation details.</p>
+    </section>
+    <section>
+        <h3>Types Of Black Box Testing</h3>
+        <ol>
+            <li>Functional Testing </li>
+            <p>Functional Testing is a crucial aspect of Software Testing, where the system undergoes rigorous examination against predefined functional requirements and specifications. This testing methodology ensures that the application adequately meets the specified requirements and performs as expected. It emphasizes the verification of processing outcomes and closely mimics real-world system usage without making any assumptions about the underlying system structure. This article delves into the intricacies of functional testing.</p>
+            <li>Regression Testing </li>
+            <p>Regression Testing involves scrutinizing both the altered segments of the code and the potentially impacted areas resulting from these modifications. Its primary objective is to ascertain that no fresh errors emerge in the software subsequent to the implementation of changes. The term "regression" signifies the recurrence of an issue, which in the realm of software, denotes the reappearance of a bug.</p>
+            <li>Non-Functional Testing </li>
+            <p>Non-functional Testing examines the non-functional aspects of the software to ensure they meet the specified requirements. It assesses whether the system's behavior aligns with the prescribed criteria and scrutinizes elements not covered in functional testing.</p>
+    </section>
+    <section>
+        <h3>Advantages & Disadvantages</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Advantages of Black Box Testing</th>
+                    <th>Disadvantages of Black Box Testing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h6>Independence from Implementation Details:</h6>Testers do not need knowledge of the internal code or system architecture, making Black Box Testing suitable for testing applications developed by external teams or third-party vendors.</td>
+                    <td><h6>Limited Test Coverage:</h6>Since testers have no visibility into the internal workings of the software, Black Box Testing may not uncover certain types of defects related to code structure, algorithms, or integration issues.</td>
+                </tr>
+                <tr>
+                    <td><h6>Focus on End-User Perspective:</h6>Black Box Testing emphasizes validating the software's functionality from the perspective of end-users, ensuring that it meets their requirements and expectations.</td>
+                    <td><h6>Inability to Test Edge Cases:</h6>Black Box Testing may overlook edge cases and boundary conditions that require knowledge of the internal logic to identify, potentially leading to incomplete test coverage.</td>
+                </tr>
+                <tr>
+                    <td><h6>Early Detection of Usability Issues:</h6>By focusing solely on the external behavior of the software, Black Box Testing can uncover usability issues and user interface inconsistencies that might otherwise go unnoticed.</td>
+                    <td><h6>Difficulty in Reproducing Defects:</h6>When defects are identified through Black Box Testing, it can be challenging to reproduce them consistently without insight into the underlying code, making debugging and resolution more time-consuming.</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+<!--Grey box testing-->
+    <section id="Grey_Box_Testing">
+        <h1>Grey Box Testing</h1>
+        <h3>Definition</h3>
+        <p>Gray Box Testing is a software testing approach that amalgamates elements of both Black Box Testing and White Box Testing methodologies.
+            In Black Box Testing, testers operate without knowledge of the internal structure of the system, whereas White Box Testing involves full comprehension of the internal workings.
+            Gray Box Testing falls between these extremes, offering partial insight into the internal structure, including access to certain data structures and algorithms to formulate test cases.
+            The term "Gray Box" reflects the semi-transparent nature of the software being tested, allowing testers to discern some internal components.
+            This method is particularly adept at uncovering context-specific errors, especially within web systems.
+            Gray Box Testing relies heavily on requirement-based test case generation, leveraging all available conditions prior to executing the test program.
+        </p>
+        <div class="image">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190422152310/pp110.png">
+            <p>Grey Box Testing</p>
+        </div>        
+    </section>
+    <section>
+        <h3>Objectives of Gray Box Testing</h3>
+        <ol>
+            <li>To harness the benefits of both black box testing and white box testing concurrently.</li>
+            <li>To integrate insights from developers and testers alike.</li>
+            <li>To enhance the overall quality of the product.</li>
+            <li>To streamline the extensive process of functional and non-functional testing, thereby reducing overhead.</li>
+            <li>To allocate developers ample time to rectify defects.</li>
+          <li>To assess functionality from a user-centric perspective rather than solely from a designer's viewpoint.</li>        </ol>
+    </section>
+    <section>
+        <h3>Advantages & Disadvantages</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Advantages of Grey Box Testing</th>
+                    <th>Disadvantages of Grey Box Testing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h6>Enhanced Test Coverage:</h6>Grey Box Testing allows testers to have a partial view of the internal implementation, enabling them to design more comprehensive test cases and identify potential errors that might be overlooked in Black Box testing.</td>
+                    <td><h6>Increased Complexity:</h6>Grey Box Testing can be more complex to implement than Black Box or White Box approaches due to the need to manage both functional and structural aspects of the software.</td>
+                </tr>
+                <tr>
+                    <td><h6>Precise Issue Identification:</h6>By having access to certain parts of the internal implementation, testers can pinpoint the sources of errors more accurately, facilitating their resolution.</td>
+                    <td><h6>Dependency on Implementation:</h6>Similar to White Box Testing, Grey Box Testing can be affected by changes in the internal implementation, requiring frequent adjustments to test cases.</td>
+                </tr>
+                <tr>
+                    <td><h6>Optimization of Testing Process:</h6>By combining Black Box and White Box approaches, Grey Box Testing offers a balance between test coverage and process complexity, which can lead to better overall testing efficiency.</td>
+                    <td><h6>Difficulty in Finding the Right Balance:</h6>Determining the amount of information to disclose to testers can be tricky, as too little information may result in inadequate test coverage, while too much information can introduce biases into the testing process.</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <!-- HTML -->
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/ehwliTbTSTW7T33U_Rir2pJfPoBPYCsYGStNxqnoBHR0pICIjZ9CWJ0hMQTB52-kXk8" type="image/x-icon">
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+body{
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/5240547/pexels-photo-5240547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content h1{
+    color: #000;
+    font-weight: 900;
+    font-size: 70px;
+    flex: 1;
+    text-shadow: 
+        1px 1px 0 #FFF, /* Top left */
+        -1px 1px 0 #FFF, /* Top right */
+        1px -1px 0 #FFF, /* Bottom left */
+        -1px -1px 0 #FFF; /* Bottom right */
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+button{
+    margin: 0 1rem;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(160, 215, 102);
+    transition: background 0.2s ease-in-out;
+}
+button:hover{
+    background: rgb(111, 148, 72);
+}
+    </style>
+</head>
+
+<body>
+    <div id="container"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $(function(){
+                $("#container").load("static/banner.html");
+            })
+        </script>
+    </div>  
+
+    <div class="content">
+        <h1>Software Testing</h1>
+        <div class="buttons">
+            <a href="content">
+                <button>Discover more</button>
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>

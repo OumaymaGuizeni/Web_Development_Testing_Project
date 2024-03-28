@@ -1,6 +1,8 @@
 #!/bin/bash
 
-#Function to stop Python SFlask Server
+#Function to stop Python Flask Server
+# according to my Testing on 28 Mars , this function is not working properly 
+# fix needed 
 stop_python_app() {
     if [ -f ~/Test_Validation/app_pid.txt ]; then
         pid=$(cat ~/Web_Development_Testing_Project/app_pid.txt)

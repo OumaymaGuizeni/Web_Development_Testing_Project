@@ -157,10 +157,10 @@ Scroll web Page
 check our home page
     [Documentation]    this keyword aims to check the elements in our home page 
     Sleep    8s
-    Run keyword and continue on failure        Page Should Contain             ${OUR_TEAM_BUTTON}
+    Run keyword and continue on failure        Page Should Contain             ${OUR_TEAM_BUTTON_TEXT}
     Capture Page Screenshot
     Sleep    8s
-    Run keyword and continue on failure        Page Should Contain             ${CONTENT_BUTTON} 
+    Run keyword and continue on failure        Page Should Contain             ${CONTENT_BUTTON_TEXT} 
     Capture Page Screenshot
     Sleep    8s
     Run keyword and continue on failure        Page Should Contain             ${HOME_BUTTON} 

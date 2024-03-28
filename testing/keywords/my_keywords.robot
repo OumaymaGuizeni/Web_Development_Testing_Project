@@ -43,10 +43,10 @@ Click On Specific Element
 Check Presence Of Oumayma Box In Our Team Page
     [Documentation]     this Keywords aims to check the Presence Of Oumayma Box inside our team page
 
-    Log    message="checking CHECK_OUMAYMA_INFO_BOX text in page"    console=True
+    Log    message=CHECKING <CHECK_OUMAYMA_INFO_BOX> TEX IN PAGE        console=True
     Run keyword and continue on failure        Page Should Contain       ${CHECK_OUMAYMA_INFO_BOX_TEXT}
-    Log    message="checking CHECK_OUMAYMA_IMAGE image in page"    console=True
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_OUMAYMA_IMAGE_XPATH} 
+    Log    message=CHECKING <CHECK_OUMAYMA_IMAGE> IMAGE IN PAGE         console=True
+    Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_OUMAYMA_IMAGE_XPATH} 
     Capture Page Screenshot     filename=Oumayma_BOX
 
 Check Presence Of Rania Box In Our Team Page 
@@ -55,7 +55,7 @@ Check Presence Of Rania Box In Our Team Page
     Log    message="checking CHECK_RANIA_INFO_BOX text in page"    console=True 
     Run keyword and continue on failure        Page Should Contain       ${CHECK_RANIA_INFO_BOX_TEXT}
     Log    message="checking CHECK_RANIA_IMAGE image in page"    console=True
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_RANIA_IMAGE_XPATH}
+    Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_RANIA_IMAGE_XPATH}
     Capture Page Screenshot     filename=Rania_BOX
 
 Check Presence Of Emna Box In Our Team Page
@@ -64,7 +64,7 @@ Check Presence Of Emna Box In Our Team Page
     Log    message="checking CHECK_EMNA_INFO_BOX text in page"    console=True
     Run keyword and continue on failure        Page Should Contain       ${CHECK_EMNA_INFO_BOX_TEXT}
     Log    message="checking CHECK_EMNA_IMAGE image in page"    console=True
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_EMNA_IMAGE_XPATH}
+    Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_EMNA_IMAGE_XPATH}
     Capture Page Screenshot     filename=Emna_BOX
 
 Check Presence Of Mohamed Box In Our Team Page
@@ -73,7 +73,7 @@ Check Presence Of Mohamed Box In Our Team Page
     Log    message="checking CHECK_MOHAMED_INFO_BOX text in page"    console=True
     Run keyword and continue on failure        Page Should Contain      ${CHECK_MOHAMED_INFO_BOX_TEXT} 
     Log    message="checking CHECK_MOHAMED_IMAGE image in page"    console=True
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_MOHAMED_IMAGE_XPATH}
+    Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_MOHAMED_IMAGE_XPATH}
     Capture Page Screenshot     filename=Mohamed_BOX
 
 Check Presence Of Eya Box In Our Team Page
@@ -82,7 +82,7 @@ Check Presence Of Eya Box In Our Team Page
     Log    message="checking CHECK_EYA_INFO_BOX text in page"    console=True
     Run keyword and continue on failure        Page Should Contain      ${CHECK_EYA_INFO_BOX_TEXT} 
     Log    message="checking CHECK_EYA_IMAGE image in page"    console=True
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_EYA_IMAGE_XPATH}
+    Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_EYA_IMAGE_XPATH}
     Capture Page Screenshot     filename=Eya_BOX
 
 Check Presence Of Zoubaida Box In Our Team Page
@@ -91,7 +91,7 @@ Check Presence Of Zoubaida Box In Our Team Page
     Log    message="checking CHECK_ZOUBAIDA_INFO_BOX text in page"    console=True
     Run keyword and continue on failure        Page Should Contain      ${CHECK_ZOUBAIDA_INFO_BOX_TEXT} 
     Log    message="checking CHECK_ZOUBAIDA_IMAGE image in page"    console=True
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_ZOUBAIDA_IMAGE_XPATH}
+    Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_ZOUBAIDA_IMAGE_XPATH}
     Capture Page Screenshot     filename=Zoubaida_BOX
 
 Check Presence Of Chedi Box In Our Team Page
@@ -100,7 +100,7 @@ Check Presence Of Chedi Box In Our Team Page
     Log    message="checking CHECK_CHEDI_INFO_BOX text in page"    console=True
     Run keyword and continue on failure        Page Should Contain      ${CHECK_CHEDI_INFO_BOX_TEXT} 
     Log    message="checking CHECK_CHEDI_IMAGE image in page"    console=True
-    Run keyword and continue on failure        Page Should Contain Image        ${CHECK_CHEDI_IMAGE_XPATH}
+    Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_CHEDI_IMAGE_XPATH}
     Capture Page Screenshot     filename=Chedi_BOX
 
 check our team page
@@ -163,11 +163,11 @@ check our home page
     Run keyword and continue on failure        Page Should Contain             ${CONTENT_BUTTON_TEXT} 
     Capture Page Screenshot
     Sleep    8s
-    Run keyword and continue on failure        Page Should Contain             ${HOME_BUTTON} 
+    Run keyword and continue on failure        Page Should Contain             ${HOME_BUTTON_TEXT} 
     Capture Page Screenshot  
     Sleep    8s
-    Run keyword and continue on failure        Page Should Contain             ${MENU_BUTTON} 
+    Run keyword and continue on failure        Page Should Contain             ${DISCOVER_MORE_BUTTON_TEXT}  
     Capture Page Screenshot 
     Sleep    8s
-    Run keyword and continue on failure        Page Should Contain Image       ${DISCOVER_MORE_BUTTON} 
+    Run keyword and continue on failure        Page Should Contain Image       xpath=${MENU_BUTTON_IMAGE_XPATH}
     Capture Page Screenshot

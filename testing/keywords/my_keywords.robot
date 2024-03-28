@@ -79,9 +79,9 @@ Check Presence Of Mohamed Box In Our Team Page
 Check Presence Of Eya Box In Our Team Page
     [Documentation]     this Keywords aims to check the Presence Of Eya Box inside our team page
 
-    Log    message="checking CHECK_EYA_INFO_BOX text in page"    console=True
+    Log    message=CHECKING <CHECK_EYA_INFO_BOX> TEXT IN PAGE       console=True
     Run keyword and continue on failure        Page Should Contain      ${CHECK_EYA_INFO_BOX_TEXT} 
-    Log    message="checking CHECK_EYA_IMAGE image in page"    console=True
+    Log    message=CHECKING <CHECK_EYA_IMAGE> IMAGE IN PAGE    console=True
     Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_EYA_IMAGE_XPATH}
     Capture Page Screenshot     filename=Eya_BOX
 

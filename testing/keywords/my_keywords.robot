@@ -88,9 +88,9 @@ Check Presence Of Eya Box In Our Team Page
 Check Presence Of Zoubaida Box In Our Team Page
     [Documentation]     this Keywords aims to check the Presence Of Zoubaida Box inside our team page
 
-    Log    message="checking CHECK_ZOUBAIDA_INFO_BOX text in page"    console=True
+    Log    message=CHECKING <CHECK_ZOUBAIDA_INFO_BOX> TEXT IN PAGE      console=True
     Run keyword and continue on failure        Page Should Contain      ${CHECK_ZOUBAIDA_INFO_BOX_TEXT} 
-    Log    message="checking CHECK_ZOUBAIDA_IMAGE image in page"    console=True
+    Log    message=CHECKING <CHECK_ZOUBAIDA_IMAGE> IMAGE IN PAGE   console=True
     Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_ZOUBAIDA_IMAGE_XPATH}
     Capture Page Screenshot     filename=Zoubaida_BOX
 

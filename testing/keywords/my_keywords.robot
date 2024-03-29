@@ -90,16 +90,16 @@ Check Presence Of Zoubaida Box In Our Team Page
 
     Log    message=CHECKING <CHECK_ZOUBAIDA_INFO_BOX> TEXT IN PAGE      console=True
     Run keyword and continue on failure        Page Should Contain      ${CHECK_ZOUBAIDA_INFO_BOX_TEXT} 
-    Log    message=CHECKING <CHECK_ZOUBAIDA_IMAGE> IMAGE IN PAGE   console=True
+    Log    message=CHECKING <CHECK_ZOUBAIDA_IMAGE> IMAGE IN PAGE        console=True
     Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_ZOUBAIDA_IMAGE_XPATH}
     Capture Page Screenshot     filename=Zoubaida_BOX
 
 Check Presence Of Chedi Box In Our Team Page
     [Documentation]     this Keywords aims to check the Presence Of Chedi Box inside our team page
 
-    Log    message="checking CHECK_CHEDI_INFO_BOX text in page"    console=True
+    Log    message=CHECKING <CHECK_CHEDI_INFO_BOX> TEXT IN PAGE         console=True
     Run keyword and continue on failure        Page Should Contain      ${CHECK_CHEDI_INFO_BOX_TEXT} 
-    Log    message="checking CHECK_CHEDI_IMAGE image in page"    console=True
+    Log    message=CHECKING <CHECK_CHEDI_IMAGE> IMAGE IN PAGE           console=True
     Run keyword and continue on failure        Page Should Contain Image        xpath=${CHECK_CHEDI_IMAGE_XPATH}
     Capture Page Screenshot     filename=Chedi_BOX
 

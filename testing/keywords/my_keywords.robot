@@ -105,30 +105,30 @@ Check Presence Of Chedi Box In Our Team Page
 
 check our team page
     [Documentation]    this keyword aims to check the elements in our team page
-    Log     message="WAITING FOR 8 SECONDS TO RENDER OUR TEAM PAGE"     console=true
+    Log     message=WAITING FOR 8 SECONDS TO RENDER OUR TEAM PAGE     console=true
     Sleep    8s  
     Check Presence Of Oumayma box in our team page
-    Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
+    Log     message=SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY     console=True                  
     Scroll web Page    pixel_number=400
     Sleep    8s
     Check Presence Of Rania Box In Our Team Page
-    Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
+    Log     message=SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY     console=True                  
     Scroll web Page    pixel_number=1000
     Sleep    8s
     Check Presence Of Emna Box In Our Team Page
-    Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
+    Log     message=SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY     console=True                  
     Scroll web Page    pixel_number=1500
     Sleep    8s
     Check Presence Of Mohamed Box In Our Team Page
-    Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
+    Log     message=SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY     console=True                  
     Scroll web Page    pixel_number=1900
     Sleep    8s
     Check Presence Of Eya Box In Our Team Page
-    Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
+    Log     message=SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY     console=True                  
     Scroll web Page    pixel_number=2300
     Sleep    8s
     Check Presence Of Zoubaida Box In Our Team Page
-    Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
+    Log     message=SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY     console=True                  
     Scroll web Page    pixel_number=2800
     Sleep    8s
     Check Presence Of Chedi Box In Our Team Page
@@ -156,7 +156,7 @@ Scroll web Page
 
 check our home page
     [Documentation]    this keyword aims to check the elements in our home page 
-    Log     message="WAITING FOR 8 SECONDS TO RENDER HOME PAGE"     console=true
+    Log     message=WAITING FOR 8 SECONDS TO RENDER HOME PAGE     console=true
     Sleep    8s
     Check Text In Page For Our Team Button
     Check Text In Page For content Button

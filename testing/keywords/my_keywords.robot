@@ -105,7 +105,7 @@ Check Presence Of Chedi Box In Our Team Page
 
 check our team page
     [Documentation]    this keyword aims to check the elements in our team page
-    Log     message="WAITING FOR 8 SECONDS TO RENDER OUT TEAM PAGE"     console=true
+    Log     message="WAITING FOR 8 SECONDS TO RENDER OUR TEAM PAGE"     console=true
     Sleep    8s  
     Check Presence Of Oumayma box in our team page
     Log     message="SCROLLING DOWN TO NEXT ELEMENT AND WAITING 8 SECONDS TO RENDER IT PROPERLY"     console=True                  
@@ -156,27 +156,35 @@ Scroll web Page
 
 check our home page
     [Documentation]    this keyword aims to check the elements in our home page 
+    Log     message="WAITING FOR 8 SECONDS TO RENDER HOME PAGE"     console=true
     Sleep    8s
-    Check Text in Page for Our Team Button
-    Sleep    8s
-    Run keyword and continue on failure        Page Should Contain             ${CONTENT_BUTTON_TEXT} 
-    Capture Page Screenshot
-    Sleep    8s
-    Run keyword and continue on failure        Page Should Contain             ${HOME_BUTTON_TEXT} 
-    Capture Page Screenshot  
-    Sleep    8s
-    Run keyword and continue on failure        Page Should Contain             ${DISCOVER_MORE_BUTTON_TEXT}  
-    Capture Page Screenshot 
-    Sleep    8s
+    Check Text In Page For Our Team Button
+    Check Text In Page For content Button
+    Check Text In Page For Home Button
+    Check Text In Page For Discover More Button
+    Check Image In Page For Menu Button
+
+Check Text In Page For Our Team Button
+    [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of OUR_TEAM_BUTTON_TEXT
+    Run keyword and continue on failure        Page Should Contain             ${OUR_TEAM_BUTTON_TEXT}
+    Capture Page Screenshot     filename=SCREENSHOT_OUR_TEAM_BUTTON_TEXT
+
+Check Text In Page For content Button
+    [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of CONTENT_BUTTON_TEXT
+    Run keyword and continue on failure        Page Should Contain             ${CONTENT_BUTTON_TEXT}
+    Capture Page Screenshot     filename=SCREENSHOT_CONTENT_BUTTON_TEXT
+
+Check Text In Page For Home Button
+    [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of HOME_BUTTON_TEXT
+    Run keyword and continue on failure        Page Should Contain             ${HOME_BUTTON_TEXT}
+    Capture Page Screenshot     filename=SCREENSHOT_HOME_BUTTON_TEXT
+
+Check Text In Page For Discover More Button
+    [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of DISCOVER_MORE_BUTTON_TEXT
+    Run keyword and continue on failure        Page Should Contain             ${DISCOVER_MORE_BUTTON_TEXT}
+    Capture Page Screenshot     filename=SCREENSHOT_DISCOVER_MORE_BUTTON_TEXT
+
+Check Image In Page For Menu Button
+    [Documentation]     this keyword used "Page Should Contain Image" keyword from SeleniumLibrary to check Text of MENU_BUTTON_IMAGE_XPATH
     Run keyword and continue on failure        Page Should Contain Image       xpath=${MENU_BUTTON_IMAGE_XPATH}
-    Capture Page Screenshot
-
-Check Text in Page for Our Team Button
-    [Documentation]     this keyword used Page Should keyword from SeleniumLibrary to check Text of our Team button 
-    Run keyword and continue on failure        Page Should Contain             ${OUR_TEAM_BUTTON_TEXT}
-    Capture Page Screenshot     filename=OUR_TEAM_BUTTON_TEXT
-
-Check Text in Page for Our Team Button
-    [Documentation]     this keyword used Page Should keyword from SeleniumLibrary to check Text of our Team button 
-    Run keyword and continue on failure        Page Should Contain             ${OUR_TEAM_BUTTON_TEXT}
-    Capture Page Screenshot     filename=OUR_TEAM_BUTTON_TEXT
+    Capture Page Screenshot     filename=SCREENSHOT_MENU_BUTTON_IMAGE_XPATH

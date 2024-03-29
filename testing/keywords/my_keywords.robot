@@ -13,6 +13,7 @@ Resource    ../ressources/my_IDs.robot
 open my website on specific browser
     [Documentation]    This keyword aims to launch the website on the browser
     [Arguments]    ${wait_time}=2
+    Log     message=OPENING URL "${MY_WEBSITE_URL}" at "${MY_BROWSER_1}"        console=True
     Open Browser    url=${MY_WEBSITE_URL}     browser=${MY_BROWSER_1}
     Sleep    ${wait_time}
 
@@ -28,6 +29,7 @@ stop my web site server
 
 maximize my web site on the specific browser
     [Documentation]    This keyword aims to maximize the testing browser
+    Log     message=+++++++++++MAXIMIZE THE BROWSER NOW++++++++++++        console=True
     Maximize Browser Window
 
 Close Current Browser
@@ -38,7 +40,10 @@ Close Current Browser
 Click On Specific Element
     [Documentation]    This keyword aims to click on SPecific Element using the SeleniumLibrary keyword "Click Element"
     [Arguments]     ${Element_Xpath}    ${WAIT_TIME}=2
-    Click Element    xpath=${Element_Xpath}
+    Log     message=CLICKINH ON SPECIFIC ELEMENT "${Element_Xpath}"
+    ${status}=    Run Keyword And Return Status     Click Element    xpath=${Element_Xpath}
+     Run Keyword If    ${status}    Log    Click Element "${Element_Xpath}" :  Passed       console=True
+    ...    Else    Run keyword and continue on failure      Failed       Click Element "${Element_Xpath}" : Failed      console=True
     Sleep   ${WAIT_TIME}
 
 Check Presence Of Oumayma Box In Our Team Page

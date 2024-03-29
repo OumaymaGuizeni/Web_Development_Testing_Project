@@ -19,12 +19,12 @@ open my website on specific browser
 launch my web site server
     [Documentation]    This keyword aims to launch the website server
     Run process        ./start_flask_server.sh        cwd=${CURDIR}/../      shell=True
-    Log    message=the server is started correctly      console=True
+    Log    message=+++++++THE SERVER IS STARTED CORRECTLY++++++++++         console=True
 
 stop my web site server
     [Documentation]    This keyword aims to stop the website server
     Run Process        ./stop_flask_server.sh        cwd=${CURDIR}/../        shell=True
-    Log    message="the server is stopped"
+    Log    message=+++++++THE SERVER IS STOPED CORRECTLY++++++++++          console=True           
 
 maximize my web site on the specific browser
     [Documentation]    This keyword aims to maximize the testing browser
@@ -32,6 +32,7 @@ maximize my web site on the specific browser
 
 Close Current Browser
     [Documentation]     This keyword aims to close The current Browser using the SeleniumLibrary keyword "Close Browser"
+    Log    message=+++++++++++++CLOSE CURRENT BROWSER++++++++++++++          console=True
     Close Browser
 
 Click On Specific Element

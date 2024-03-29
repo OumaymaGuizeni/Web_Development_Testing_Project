@@ -157,8 +157,7 @@ Scroll web Page
 check our home page
     [Documentation]    this keyword aims to check the elements in our home page 
     Sleep    8s
-    Run keyword and continue on failure        Page Should Contain             ${OUR_TEAM_BUTTON_TEXT}
-    Capture Page Screenshot
+    Check Text in Page for Our Team Button
     Sleep    8s
     Run keyword and continue on failure        Page Should Contain             ${CONTENT_BUTTON_TEXT} 
     Capture Page Screenshot
@@ -171,3 +170,13 @@ check our home page
     Sleep    8s
     Run keyword and continue on failure        Page Should Contain Image       xpath=${MENU_BUTTON_IMAGE_XPATH}
     Capture Page Screenshot
+
+Check Text in Page for Our Team Button
+    [Documentation]     this keyword used Page Should keyword from SeleniumLibrary to check Text of our Team button 
+    Run keyword and continue on failure        Page Should Contain             ${OUR_TEAM_BUTTON_TEXT}
+    Capture Page Screenshot     filename=OUR_TEAM_BUTTON_TEXT
+
+Check Text in Page for Our Team Button
+    [Documentation]     this keyword used Page Should keyword from SeleniumLibrary to check Text of our Team button 
+    Run keyword and continue on failure        Page Should Contain             ${OUR_TEAM_BUTTON_TEXT}
+    Capture Page Screenshot     filename=OUR_TEAM_BUTTON_TEXT

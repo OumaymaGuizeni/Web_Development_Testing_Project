@@ -20,7 +20,8 @@ ${OUR_TEAM_BUTTON_TEXT}                    OUR_TEAM
 ${CONTENT_BUTTON_TEXT}                     CONTENT
 ${DISCOVER_MORE_BUTTON_TEXT}               Discover more
 ${MENU_BUTTON_IMAGE_XPATH}                 /html/body/div[1]/div/nav/a/img
-${OUR_TEAM_BUTTON_XPATH}                   /html/body/div[1]/div/nav/ul/li[2]/a 
+${OUR_TEAM_BUTTON_XPATH}                   /html/body/div[1]/div/nav/ul/li[2]/a
+${CONTENT_BUTTON_XPATH}                    /html/body/div[1]/div/nav/ul/li[3]/a
 
 # --------------- Variables for OUR Team Page -----------------------------
 
@@ -39,3 +40,11 @@ ${CHECK_MOHAMED_IMAGE_XPATH}                /html/body/div[5]/div/div/div[1]/img
 ${CHECK_EYA_IMAGE_XPATH}                    /html/body/div[6]/div/div/div[2]/img
 ${CHECK_ZOUBAIDA_IMAGE_XPATH}               /html/body/div[7]/div/div/div[1]/img
 ${CHECK_CHEDI_IMAGE_XPATH}                  /html/body/div[8]/div/div/div[2]/img
+
+# --------------- Variables for OUR Content Page -----------------------------
+
+${INTRODUCTION_BUTTON_TEXT}                                Introduction
+${TYPES_OF_SOFTWARE_TESTING_BUTTON_TEXT}                   Types of Softawre Testing
+${TOOLS_FOR_AUTOMATION_TESTING_BUTTON_TEXT}                Tools for Automation Testing
+${REAL_WORLD_APPLICATIONS_BUTTON_TEXT}                     Real-world app
+${CONCLUSION_BUTTON_TEXT}                                  Conclusion

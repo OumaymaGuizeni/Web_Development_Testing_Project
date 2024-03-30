@@ -171,22 +171,25 @@ check our home page
 Check Text In Page For Our Team Button
     [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of OUR_TEAM_BUTTON_TEXT
     Run keyword and continue on failure        Page Should Contain             ${OUR_TEAM_BUTTON_TEXT}
+    #Click Button    xpath=${..._BUTTON_TEXT}
     Capture Page Screenshot     filename=SCREENSHOT_OUR_TEAM_BUTTON_TEXT.png
 
 Check Text In Page For content Button
     [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of CONTENT_BUTTON_TEXT
     Run keyword and continue on failure        Page Should Contain             ${CONTENT_BUTTON_TEXT}
-    #Click Button    xpath=${CONTENT_BUTTON_TEXT}
+    #Click Button    xpath=${..._BUTTON_TEXT}
     Capture Page Screenshot     filename=SCREENSHOT_CONTENT_BUTTON_TEXT.png
 
 Check Text In Page For Home Button
     [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of HOME_BUTTON_TEXT
     Run keyword and continue on failure        Page Should Contain             ${HOME_BUTTON_TEXT}
+    #Click Button    xpath=${..._BUTTON_TEXT}
     Capture Page Screenshot     filename=SCREENSHOT_HOME_BUTTON_TEXT.png
 
 Check Text In Page For Discover More Button
     [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of DISCOVER_MORE_BUTTON_TEXT
     Run keyword and continue on failure        Page Should Contain             ${DISCOVER_MORE_BUTTON_TEXT}
+    #Click Button    xpath=${..._BUTTON_TEXT}
     Capture Page Screenshot     filename=SCREENSHOT_DISCOVER_MORE_BUTTON_TEXT.png
 
 Check Image In Page For Menu Button
@@ -194,3 +197,54 @@ Check Image In Page For Menu Button
     Run keyword and continue on failure        Page Should Contain Image       xpath=${MENU_BUTTON_IMAGE_XPATH}
     Click Element    xpath=${MENU_BUTTON_IMAGE_XPATH}
     Capture Page Screenshot     filename=SCREENSHOT_MENU_BUTTON_IMAGE_XPATH.png
+
+check our content page
+    [Documentation]    this keyword aims to check the elements in our content page 
+    Log     message=WAITING FOR 8 SECONDS TO RENDER CONTENT PAGE     console=true
+    Sleep    8s
+    Check Image In Page For Menu Button
+    Check Text Introduction In Menu Button
+    Check Text Types of Software Testing In Menu Button
+    Check Text Tools for Automation Testing In Menu Button
+    Check Text Real World Applications In Menu Button
+    Check Text Conclusion In Menu Button
+
+Check Text Conclusion In Menu Button
+    [Documentation]    this keyword aims to check the Conclusion text in our Menu Button
+    Log    message=WAITING FOR 5 SECONDS TO CHECK CONCLUSION BUTTON    console=true
+    Sleep    5s
+    Run keyword and continue on failure        Page Should Contain             ${CONCLUSION_BUTTON_TEXT}
+    #clic on Conclusion
+    Capture Page Screenshot     filename=SCREENSHOT_CONCLUSION_BUTTON_TEXT.png
+
+Check Text Real World Applications In Menu Button
+    [Documentation]    this keyword aims to check the Real World Applications text in our Menu Button
+    Log    message=WAITING FOR 5 SECONDS TO CHECK REAL WORLD APPLICATIONS BUTTON     console=true
+    Sleep    5s
+    Run keyword and continue on failure        Page Should Contain             ${REAL_WORLD_APPLICATIONS_BUTTON_TEXT}
+    #clic on Real World Applications
+    Capture Page Screenshot     filename=SCREENSHOT_REAL_WORLD_APPLICATIONS_BUTTON_TEXT.png
+
+Check Text Tools for Automation Testing In Menu Button
+    [Documentation]    this keyword aims to check the Tools for Automation Testing text in our Menu Button
+    Log    message=WAITING FOR 5 SECONDS TO CHECK TOOLS FOR AUTOMATION TESTING BUTTON     console=true
+    Sleep    5s
+    Run keyword and continue on failure        Page Should Contain             ${TOOLS_FOR_AUTOMATION_TESTING_BUTTON_TEXT}
+    #clic on Tools for Automation Testing
+    Capture Page Screenshot     filename=SCREENSHOT_TOOLS_FOR_AUTOMATION_TESTING_BUTTON_TEXT.png
+
+Check Text Types of Software Testing In Menu Button
+    [Documentation]    this keyword aims to check the Types of Software Testing text in our Menu Button
+    Log    message=WAITING FOR 5 SECONDS TO CHECK TYPES OF SOFTWARE TESTING BUTTON     console=true
+    Sleep    5s
+    Run keyword and continue on failure        Page Should Contain             ${TYPES_OF_SOFTWARE_TESTING_BUTTON_TEXT}
+    #clic on Types of Software Testing
+    Capture Page Screenshot     filename=SCREENSHOT_TYPES_OF_SOFTWARE_TESTING_BUTTON_TEXT.png
+
+Check Text Introduction In Menu Button
+    [Documentation]    this keyword aims to check the Introduction text in our Menu Button
+    Log    message=WAITING FOR 5 SECONDS TO CHECK INTRODUCTION BUTTON     console=true
+    Sleep    5s
+    Run keyword and continue on failure        Page Should Contain             ${INTRODUCTION_BUTTON_TEXT}
+    #clic on introduction
+    Capture Page Screenshot     filename=SCREENSHOT_INTRODUCTION_BUTTON_TEXT.png

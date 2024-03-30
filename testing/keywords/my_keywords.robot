@@ -176,6 +176,7 @@ Check Text In Page For Our Team Button
 Check Text In Page For content Button
     [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of CONTENT_BUTTON_TEXT
     Run keyword and continue on failure        Page Should Contain             ${CONTENT_BUTTON_TEXT}
+    #Click Button    xpath=${CONTENT_BUTTON_TEXT}
     Capture Page Screenshot     filename=SCREENSHOT_CONTENT_BUTTON_TEXT.png
 
 Check Text In Page For Home Button
@@ -191,4 +192,5 @@ Check Text In Page For Discover More Button
 Check Image In Page For Menu Button
     [Documentation]     this keyword used "Page Should Contain Image" keyword from SeleniumLibrary to check Text of MENU_BUTTON_IMAGE_XPATH
     Run keyword and continue on failure        Page Should Contain Image       xpath=${MENU_BUTTON_IMAGE_XPATH}
+    Click Element    xpath=${MENU_BUTTON_IMAGE_XPATH}
     Capture Page Screenshot     filename=SCREENSHOT_MENU_BUTTON_IMAGE_XPATH.png

@@ -251,6 +251,7 @@ Check Text Introduction In Menu Button
 
 Check Element Status
     [Documentation]     this keyword aims to check a specific Element status using SeleniumLibrary keyword "Element should Be Enabled"
+    ...    and    "Element should Be Disabled" 
     [Arguments]     ${Element_Xpath}    ${status}   
     IF  '${status}' == 'Enabled'
         Log     message=CHECKING_IF_THE_ELEMENT_${Element_Xpath}_IS_CLICKABLE       console=True
@@ -258,4 +259,16 @@ Check Element Status
     ELSE
         Log     message=CHECKING_IF_THE_ELEMENT_${Element_Xpath}_IS_NOT_CLICKABLE       console=True
         Element Should Be Disabled   xpath=${Element_Xpath}
+    END
+
+Check Element Presence
+    [Documentation]    this keyword aims to check element presence using SeleniumLibrary "Element Should Be Visible" keyword
+    ...    and    "Element Should Not Be Visible"
+    [Arguments]    ${Element_Xpath}    ${status}
+    IF  '${status}' == 'Visible'
+        Log     message=CHECKING_IF_THE_ELEMENT_${Element_Xpath}_IS_VISIBLE       console=True
+        Element Should Be Visible   xpath=${Element_Xpath}
+    ELSE
+        Log     message=CHECKING_IF_THE_ELEMENT_${Element_Xpath}_IS_NOT_VISIBLE       console=True
+        Element Should Not Be Visible   xpath=${Element_Xpath}
     END

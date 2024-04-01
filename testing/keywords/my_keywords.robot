@@ -248,3 +248,14 @@ Check Text Introduction In Menu Button
     Run keyword and continue on failure        Page Should Contain             ${INTRODUCTION_BUTTON_TEXT}
     #clic on introduction
     Capture Page Screenshot     filename=SCREENSHOT_INTRODUCTION_BUTTON_TEXT.png
+
+Check Element Status
+    [Documentation]     this keyword aims to check a specific Element status using SeleniumLibrary keyword "Element should Be Enabled"
+    [Arguments]     ${Element_Xpath}    ${status}   
+    IF  '${status}' == 'Enabled'
+        Log     message=CHECKING_IF_THE_ELEMENT_${Element_Xpath}_IS_CLICKABLE       console=True
+        Element Should Be Enabled   xpath=${Element_Xpath}
+    ELSE
+        Log     message=CHECKING_IF_THE_ELEMENT_${Element_Xpath}_IS_NOT_CLICKABLE       console=True
+        Element Shoul Be Disabled   xpath=${Element_Xpath}
+    END

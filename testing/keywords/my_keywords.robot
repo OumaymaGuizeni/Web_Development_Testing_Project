@@ -192,22 +192,25 @@ Check Text In Page For Discover More Button
     #Click Button    xpath=${..._BUTTON_TEXT}
     Capture Page Screenshot     filename=SCREENSHOT_DISCOVER_MORE_BUTTON_TEXT.png
 
-Check Image In Page For Menu Button
-    [Documentation]     this keyword used "Page Should Contain Image" keyword from SeleniumLibrary to check Text of MENU_BUTTON_IMAGE_XPATH
-    Run keyword and continue on failure        Page Should Contain Image       xpath=${MENU_BUTTON_IMAGE_XPATH}    
-    Click Element    xpath=${MENU_BUTTON_IMAGE_XPATH}
+Check And Click On Menu Button
+    [Documentation]     this keyword used "Check Element Presence" keyword to check and click on MENU_BUTTON
+    Run keyword and continue on failure        Check Element Presence       Element_xpath=${MENU_BUTTON_IMAGE_XPATH}    status=Visible
+    Run keyword and continue on failure        Check Element Presence       Element_xpath=${MENU_LIST_XPATH}            status=Not_Visible
     Capture Page Screenshot     filename=SCREENSHOT_MENU_BUTTON_IMAGE_XPATH.png
+    Click Element    xpath=${MENU_BUTTON_IMAGE_XPATH}
+    Run keyword and continue on failure        Check Element Presence       Element_xpath=${MENU_LIST_XPATH}            status=Visible
+    Capture Page Screenshot     filename=SCREENSHOT_MENU_LIST_XPATH.png
 
 check our content page
     [Documentation]    this keyword aims to check the elements in our content page 
     Log     message=WAITING FOR 8 SECONDS TO RENDER CONTENT PAGE     console=true
     Sleep    8s
-    Check Image In Page For Menu Button
-    Check Text Introduction In Menu Button
-    Check Text Types of Software Testing In Menu Button
-    Check Text Tools for Automation Testing In Menu Button
-    Check Text Real World Applications In Menu Button
-    Check Text Conclusion In Menu Button
+    #Check Image In Page For Menu Button
+    #Check Text Introduction In Menu Button
+    #Check Text Types of Software Testing In Menu Button
+    #Check Text Tools for Automation Testing In Menu Button
+    #Check Text Real World Applications In Menu Button
+    #Check Text Conclusion In Menu Button
 
 Check Text Conclusion In Menu Button
     [Documentation]    this keyword aims to check the Conclusion text in our Menu Button

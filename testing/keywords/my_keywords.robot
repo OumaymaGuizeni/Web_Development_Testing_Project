@@ -194,7 +194,7 @@ Check Text In Page For Discover More Button
 
 Check Image In Page For Menu Button
     [Documentation]     this keyword used "Page Should Contain Image" keyword from SeleniumLibrary to check Text of MENU_BUTTON_IMAGE_XPATH
-    Run keyword and continue on failure        Page Should Contain Image       xpath=${MENU_BUTTON_IMAGE_XPATH}
+    Run keyword and continue on failure        Page Should Contain Image       xpath=${MENU_BUTTON_IMAGE_XPATH}    
     Click Element    xpath=${MENU_BUTTON_IMAGE_XPATH}
     Capture Page Screenshot     filename=SCREENSHOT_MENU_BUTTON_IMAGE_XPATH.png
 

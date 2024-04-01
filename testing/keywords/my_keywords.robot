@@ -257,5 +257,5 @@ Check Element Status
         Element Should Be Enabled   xpath=${Element_Xpath}
     ELSE
         Log     message=CHECKING_IF_THE_ELEMENT_${Element_Xpath}_IS_NOT_CLICKABLE       console=True
-        Element Shoul Be Disabled   xpath=${Element_Xpath}
+        Element Should Be Disabled   xpath=${Element_Xpath}
     END

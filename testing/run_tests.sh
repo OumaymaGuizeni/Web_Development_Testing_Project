@@ -14,7 +14,7 @@ run_robot_tests() {
     TEST_SUITES=(
         "test_cases/Test_our_home_page.robot"
         "test_cases/Test_our_team_page.robot"
-        "test_cases/Test_our_content_page.robot"
+        "test_cases/Test_our_content_menu.robot"
 
         #"test_suites/5000.robot" # this test is not well implemented 
         # Add more test suites here if needed

@@ -267,7 +267,7 @@ Check Element Presence
         Element Should Not Be Visible   xpath=${Element_Xpath}
     END
 
-    Check And Click On Menu Button
+Check And Click On Menu Button
     [Documentation]     this keyword used "Check Element Presence" keyword to check and click on MENU_BUTTON
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    status=Visible
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_LIST_XPATH}            status=Not_Visible

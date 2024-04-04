@@ -13,7 +13,7 @@ Resource    ../ressources/my_IDs.robot
 open my website on specific browser
     [Documentation]    This keyword aims to launch the website on the browser
     [Arguments]    ${wait_time}=2
-    Log     message=OPENING URL : ${MY_WEBSITE_URL} at : ${MY_BROWSER_1}        console=True
+    Log     message=OPENING_URL_:_${MY_WEBSITE_URL}_at_:_${MY_BROWSER_1}             console=True
     Open Browser    url=${MY_WEBSITE_URL}     browser=${MY_BROWSER_1}
     Sleep    ${wait_time}
 
@@ -166,7 +166,7 @@ check our home page
     Check Text In Page For content Button
     Check Text In Page For Home Button
     Check Text In Page For Discover More Button
-    Check Image In Page For Menu Button
+    
 
 Check Text In Page For Our Team Button
     [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of OUR_TEAM_BUTTON_TEXT
@@ -191,15 +191,6 @@ Check Text In Page For Discover More Button
     Run keyword and continue on failure        Page Should Contain             ${DISCOVER_MORE_BUTTON_TEXT}
     #Click Button    xpath=${..._BUTTON_TEXT}
     Capture Page Screenshot     filename=SCREENSHOT_DISCOVER_MORE_BUTTON_TEXT.png
-
-Check And Click On Menu Button
-    [Documentation]     this keyword used "Check Element Presence" keyword to check and click on MENU_BUTTON
-    Run keyword and continue on failure        Check Element Presence       Element_xpath=${MENU_BUTTON_IMAGE_XPATH}    status=Visible
-    Run keyword and continue on failure        Check Element Presence       Element_xpath=${MENU_LIST_XPATH}            status=Not_Visible
-    Capture Page Screenshot     filename=SCREENSHOT_MENU_BUTTON_IMAGE_XPATH.png
-    Click Element    xpath=${MENU_BUTTON_IMAGE_XPATH}
-    Run keyword and continue on failure        Check Element Presence       Element_xpath=${MENU_LIST_XPATH}            status=Visible
-    Capture Page Screenshot     filename=SCREENSHOT_MENU_LIST_XPATH.png
 
 check our content page
     [Documentation]    this keyword aims to check the elements in our content page 
@@ -275,3 +266,12 @@ Check Element Presence
         Log     message=CHECKING_IF_THE_ELEMENT_${Element_Xpath}_IS_NOT_VISIBLE       console=True
         Element Should Not Be Visible   xpath=${Element_Xpath}
     END
+
+    Check And Click On Menu Button
+    [Documentation]     this keyword used "Check Element Presence" keyword to check and click on MENU_BUTTON
+    Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    status=Visible
+    Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_LIST_XPATH}            status=Not_Visible
+    Capture Page Screenshot     filename=SCREENSHOT_MENU_BUTTON_IMAGE_XPATH.png
+    Click On Specific Element       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    WAIT_TIME=5
+    Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_LIST_XPATH}            status=Visible
+    Capture Page Screenshot     filename=SCREENSHOT_MENU_LIST_XPATH.png

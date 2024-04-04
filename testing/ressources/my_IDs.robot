@@ -19,7 +19,7 @@ ${HOME_BUTTON_TEXT}                        HOME
 ${OUR_TEAM_BUTTON_TEXT}                    OUR_TEAM
 ${CONTENT_BUTTON_TEXT}                     CONTENT
 ${DISCOVER_MORE_BUTTON_TEXT}               Discover more
-${MENU_BUTTON_IMAGE_XPATH}                 /html/body/div[1]/div/nav/a/img
+${MENU_BUTTON_IMAGE_XPATH}                 //*[@id="icon-menu"]/img
 ${OUR_TEAM_BUTTON_XPATH}                   /html/body/div[1]/div/nav/ul/li[2]/a
 ${CONTENT_BUTTON_XPATH}                    /html/body/div[1]/div/nav/ul/li[3]/a
 

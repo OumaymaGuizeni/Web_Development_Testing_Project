@@ -15,7 +15,7 @@ Test_our_content_page
     
     open my website on specific browser    wait_time=5
     maximize my web site on the specific browser
-    Click On Specific Element    Element_Xpath=${CONTENT_BUTTON_XPATH}
+    #Click On Specific Element    Element_Xpath=${CONTENT_BUTTON_XPATH}
     Check And Click On Menu Button
     
     [Teardown]    Run Keywords    Close Current Browser 

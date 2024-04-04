@@ -13,6 +13,7 @@ TEST_SUITES=(
 # **************************************************************************
 # **************************************************************************
 # ********************* Main Script ****************************************
+clear
 echo " Welcome to the Our Web Developement & Testing Project "
 echo "This Project is For learning Purposes"
  

@@ -268,7 +268,9 @@ Check And Click On Menu Button
     Log     message=CHECKING_IF_THE_MENU_IS_WELL_DISPLAYED      console=True
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_LIST_XPATH}            status=Visible
     # Note this is New Keyword for Taking Screenshots of a specific Element
-    Capture Element Screenshot      xpath=${MENU_BUTTON_IMAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_MENU_BUTTON_IMAGE_XPATH_1.png
+    Capture Element Screenshot      xpath=${MENU_BUTTON_IMAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_MENU_BUTTON_IMAGE_XPATH_2.png
+    # Note this is New Keyword for Taking Screenshots of a specific Element
+    Capture Element Screenshot      xpath=${MENU_LIST_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_MENU_LIST_XPATH_1.png
     Check Text Introduction In Menu Button
     Check Text Types of Software Testing In Menu Button
     Check Text Tools for Automation Testing In Menu Button
@@ -280,4 +282,4 @@ Check And Click On Menu Button
     Log     message=CHECKING_IF_THE_MENU_IS_NOT_DISPLAYING          console=True
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    status=Visible
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_LIST_XPATH}            status=Not_Visible
-    Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_MENU_BUTTON_IMAGE_XPATH_2.png
+    Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_MENU_BUTTON_IMAGE_XPATH_3.png

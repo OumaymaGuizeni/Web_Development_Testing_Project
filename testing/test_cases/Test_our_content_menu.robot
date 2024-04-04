@@ -1,4 +1,4 @@
-# This Testcase checked our Content page
+# This Testcase checked our Content Menu
 # Date: 27/03/2024   Author: Oumayma Guizeni
 
 *** Settings ***
@@ -8,7 +8,7 @@ Resource    ../keywords/my_keywords.robot
 
 *** Test Cases ***
 Test_our_content_menu
-    [Documentation]    This Test case aims to test our Content page
+    [Documentation]    This Test case aims to test our Content menu
     [Tags]    acceptance    sanity    firefox
     [Setup]    launch my web site server
 

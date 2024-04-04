@@ -9,10 +9,13 @@ TEST_SUITES=(
     "test_cases/Test_our_home_page.robot"
     "test_cases/Test_our_team_page.robot"
     "test_cases/Test_our_content_menu.robot"
+    "test_cases/Test_our_content_page.robot"
 )
+
 # **************************************************************************
 # **************************************************************************
 # ********************* Main Script ****************************************
+
 clear
 echo " Welcome to the Our Web Developement & Testing Project "
 echo "This Project is For learning Purposes"

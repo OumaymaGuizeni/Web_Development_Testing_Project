@@ -1,4 +1,4 @@
-# This Testcase checked our Content Menu
+# This Testcase checked our Content menu
 # Date: 27/03/2024   Author: Oumayma Guizeni
 
 *** Settings ***

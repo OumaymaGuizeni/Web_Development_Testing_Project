@@ -7,7 +7,7 @@ Resource    ../keywords/my_keywords.robot
 
 
 *** Test Cases ***
-Test_our_content_menu
+Test_our_content_page
     [Documentation]    This Test case aims to test our Content page
     [Tags]    acceptance    sanity    firefox
     [Setup]    launch my web site server
@@ -15,7 +15,9 @@ Test_our_content_menu
     
     open my website on specific browser    wait_time=5
     maximize my web site on the specific browser
+    Click On Specific Element       Element_Xpath=${CONTENT_BUTTON_XPATH}       WAIT_TIME=2
     Check And Click On Menu Button
+    # To develope a continue for This Test Case
     
     [Teardown]    Run Keywords    Close Current Browser 
     ...    AND    stop my web site server

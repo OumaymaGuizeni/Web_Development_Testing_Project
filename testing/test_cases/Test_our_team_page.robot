@@ -17,6 +17,7 @@ Test_our_team_page
     maximize my web site on the specific browser
     Click On Specific Element    Element_Xpath=${OUR_TEAM_BUTTON_XPATH}     WAIT_TIME=5
     check our team page
+    Check And Click On Menu Button
     
     
     [Teardown]    Run Keywords    Close Current Browser 

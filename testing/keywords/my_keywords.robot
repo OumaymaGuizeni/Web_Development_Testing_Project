@@ -183,14 +183,12 @@ Check Text In Page For content Button
 Check Text In Page For Home Button
     [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of HOME_BUTTON_TEXT
     Run keyword and continue on failure        Page Should Contain             ${HOME_BUTTON_TEXT}
-    #Click Button    xpath=${..._BUTTON_TEXT}
-    Capture Page Screenshot     filename=SCREENSHOT_HOME_BUTTON_TEXT.png
+    Capture Page Screenshot     filename=Screenshots/SCREENSHOT_HOME_BUTTON_TEXT.png
 
 Check Text In Page For Discover More Button
     [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of DISCOVER_MORE_BUTTON_TEXT
     Run keyword and continue on failure        Page Should Contain             ${DISCOVER_MORE_BUTTON_TEXT}
-    #Click Button    xpath=${..._BUTTON_TEXT}
-    Capture Page Screenshot     filename=SCREENSHOT_DISCOVER_MORE_BUTTON_TEXT.png
+    Capture Page Screenshot     filename=Screenshots/SCREENSHOT_DISCOVER_MORE_BUTTON_TEXT.png
 
 check our content page
     [Documentation]    this keyword aims to check the elements in our content page 
@@ -205,43 +203,33 @@ check our content page
 
 Check Text Conclusion In Menu Button
     [Documentation]    this keyword aims to check the Conclusion text in our Menu Button
-    Log    message=WAITING FOR 5 SECONDS TO CHECK CONCLUSION BUTTON    console=true
-    Sleep    5s
+    Log    message=CHECK_CONCLUSION_BUTTON    console=True
     Run keyword and continue on failure        Page Should Contain             ${CONCLUSION_BUTTON_TEXT}
-    #clic on Conclusion
-    Capture Page Screenshot     filename=SCREENSHOT_CONCLUSION_BUTTON_TEXT.png
+    Capture Page Screenshot     filename=Screenshots/SCREENSHOT_CONCLUSION_BUTTON_TEXT.png
 
 Check Text Real World Applications In Menu Button
     [Documentation]    this keyword aims to check the Real World Applications text in our Menu Button
-    Log    message=WAITING FOR 5 SECONDS TO CHECK REAL WORLD APPLICATIONS BUTTON     console=true
-    Sleep    5s
+    Log    message=CHECK_REAL_WORLD_APPLICATIONS_BUTTON     console=True
     Run keyword and continue on failure        Page Should Contain             ${REAL_WORLD_APPLICATIONS_BUTTON_TEXT}
-    #clic on Real World Applications
-    Capture Page Screenshot     filename=SCREENSHOT_REAL_WORLD_APPLICATIONS_BUTTON_TEXT.png
+    Capture Page Screenshot     filename=Screenshots/SCREENSHOT_REAL_WORLD_APPLICATIONS_BUTTON_TEXT.png
 
 Check Text Tools for Automation Testing In Menu Button
     [Documentation]    this keyword aims to check the Tools for Automation Testing text in our Menu Button
-    Log    message=WAITING FOR 5 SECONDS TO CHECK TOOLS FOR AUTOMATION TESTING BUTTON     console=true
-    Sleep    5s
+    Log    message=CHECK_TOOLS_FOR_AUTOMATION_TESTING_BUTTON     console=True
     Run keyword and continue on failure        Page Should Contain             ${TOOLS_FOR_AUTOMATION_TESTING_BUTTON_TEXT}
-    #clic on Tools for Automation Testing
-    Capture Page Screenshot     filename=SCREENSHOT_TOOLS_FOR_AUTOMATION_TESTING_BUTTON_TEXT.png
+    Capture Page Screenshot     filename=Screenshots/SCREENSHOT_TOOLS_FOR_AUTOMATION_TESTING_BUTTON_TEXT.png
 
 Check Text Types of Software Testing In Menu Button
     [Documentation]    this keyword aims to check the Types of Software Testing text in our Menu Button
-    Log    message=WAITING FOR 5 SECONDS TO CHECK TYPES OF SOFTWARE TESTING BUTTON     console=true
-    Sleep    5s
+    Log    message=CHECK_TYPES_OF_SOFTWARE_TESTING_BUTTON     console=True
     Run keyword and continue on failure        Page Should Contain             ${TYPES_OF_SOFTWARE_TESTING_BUTTON_TEXT}
-    #clic on Types of Software Testing
-    Capture Page Screenshot     filename=SCREENSHOT_TYPES_OF_SOFTWARE_TESTING_BUTTON_TEXT.png
+    Capture Page Screenshot     filename=Screenshots/SCREENSHOT_TYPES_OF_SOFTWARE_TESTING_BUTTON_TEXT.png
 
 Check Text Introduction In Menu Button
     [Documentation]    this keyword aims to check the Introduction text in our Menu Button
-    Log    message=WAITING FOR 5 SECONDS TO CHECK INTRODUCTION BUTTON     console=true
-    Sleep    5s
+    Log    message=CHECK_INTRODUCTION_BUTTON     console=True
     Run keyword and continue on failure        Page Should Contain             ${INTRODUCTION_BUTTON_TEXT}
-    #clic on introduction
-    Capture Page Screenshot     filename=SCREENSHOT_INTRODUCTION_BUTTON_TEXT.png
+    Capture Page Screenshot     filename=Screenshots/SCREENSHOT_INTRODUCTION_BUTTON_TEXT.png
 
 Check Element Status
     [Documentation]     this keyword aims to check a specific Element status using SeleniumLibrary keyword "Element should Be Enabled"
@@ -269,12 +257,23 @@ Check Element Presence
 
 Check And Click On Menu Button
     [Documentation]     this keyword used "Check Element Presence" keyword to check and click on MENU_BUTTON
+    Log     message=CHECKING_IF_THE_MENU_IS_NOT_DISPLAYING      console=True
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    status=Visible
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_LIST_XPATH}            status=Not_Visible
-    Capture Page Screenshot     filename=SCREENSHOT_MENU_BUTTON_IMAGE_XPATH.png
+    Capture Page Screenshot     filename=Screenshots/SCREENSHOT_MENU_BUTTON_IMAGE_XPATH_1.png
+    Log     message=CLICKING_ON_THE_MENU        console=True
     Click On Specific Element       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    WAIT_TIME=5
+    Log     message=CHECKING_IF_THE_MENU_IS_WELL_DISPLAYED      console=True
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_LIST_XPATH}            status=Visible
-    Capture Page Screenshot     filename=SCREENSHOT_MENU_LIST_XPATH.png
+    Check Text Introduction In Menu Button
+    Check Text Types of Software Testing In Menu Button
+    Check Text Tools for Automation Testing In Menu Button
+    Check Text Real World Applications In Menu Button
+    Check Text Conclusion In Menu Button
+    Capture Page Screenshot     filename=Screenshots/SCREENSHOT_MENU_LIST_XPATH.png
+    Log     message=CLICKING_ON_THE_MENU_AGAIN_TO_CLOSE_IT      console=True
     Click On Specific Element       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    WAIT_TIME=5
+    Log     message=CHECKING_IF_THE_MENU_IS_NOT_DISPLAYING          console=True
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    status=Visible
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_LIST_XPATH}            status=Not_Visible
+    Capture Page Screenshot     filename=Screenshots/SCREENSHOT_MENU_BUTTON_IMAGE_XPATH_2.png

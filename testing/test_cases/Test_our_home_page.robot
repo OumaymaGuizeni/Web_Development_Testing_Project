@@ -16,6 +16,7 @@ Test_our_home_page
     open my website on specific browser    wait_time=5
     maximize my web site on the specific browser
     check our home page
+    Check And Click On Menu Button
     
     
     [Teardown]    Run Keywords    Close Current Browser 

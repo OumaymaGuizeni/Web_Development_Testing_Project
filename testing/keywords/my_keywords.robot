@@ -275,3 +275,6 @@ Check And Click On Menu Button
     Click On Specific Element       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    WAIT_TIME=5
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_LIST_XPATH}            status=Visible
     Capture Page Screenshot     filename=SCREENSHOT_MENU_LIST_XPATH.png
+    Click On Specific Element       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    WAIT_TIME=5
+    Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    status=Visible
+    Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_LIST_XPATH}            status=Not_Visible

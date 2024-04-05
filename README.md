@@ -107,9 +107,15 @@ pip3 install robotframework-seleniumlibrary
 
 ### For Developement : Under Construction 
 
+<br>
+<br>
+
 <p> Under Construction </p>
 
+<br>
+<br>
 
+---
 ### For Testing : Run all the Test_cases 
 
 
@@ -125,7 +131,12 @@ to give the script the premissions then execute using " ./ "
 
 Then The Script will give you options and you can select the Option N°2
 
+---
 
+<br>
+<br>
+
+---
 ### For Testing :  Run a specifique Test Case 
 
 you can use the script 'run_tests.sh' under the folder testing to run one specific  test case 
@@ -140,6 +151,7 @@ to give the script the premissions then execute using " ./ "
 
 Then The Script will give you options and you can select the Option N°1 and then the list of available test cases will be show and you can select whethever you like 
 
+---
 
 <br>
 <br>

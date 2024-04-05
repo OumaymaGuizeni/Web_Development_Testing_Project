@@ -1,8 +1,17 @@
 <!-- This was Created By Oumayma Guizeni  -->
 <!-- Date : fev 23 2024 -->
 
-<div align="center">
-  <img src="/src/image1.jpeg" alt="My website" width="400" height="200" >
+<div align="left">
+  <img src="/src/web-application-testing.jpg" alt="Testing" width="400" height="200" >
+
+  <br/>
+
+  <h3><b>WEB DEVELOPING & TESTING PROJECT</b></h3>
+
+</div>
+
+<div align="right">
+  <img src="/src/images.jpeg" alt="Developing" width="400" height="200" >
 
   <br/>
 

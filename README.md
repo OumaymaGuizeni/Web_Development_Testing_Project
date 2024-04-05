@@ -2,7 +2,7 @@
 <!-- Date : fev 23 2024 -->
 
 <div align="center">
-  <img src="/src/image1.jpeg" alt="My website" width="200" height="100" >
+  <img src="/src/image1.jpeg" alt="My website" width="400" height="200" >
 
   <br/>
 

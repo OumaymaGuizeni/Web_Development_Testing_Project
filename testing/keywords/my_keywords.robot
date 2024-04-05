@@ -13,33 +13,39 @@ Resource    ../ressources/my_IDs.robot
 open my website on specific browser
     [Documentation]    This keyword aims to launch the website on the browser
     [Arguments]    ${wait_time}=2
+    
     Log     message=OPENING_URL_:_${MY_WEBSITE_URL}_at_:_${MY_BROWSER_1}             console=True
     Open Browser    url=${MY_WEBSITE_URL}     browser=${MY_BROWSER_1}
     Sleep    ${wait_time}
 
 launch my web site server
     [Documentation]    This keyword aims to launch the website server
+    
     Run process        ./start_flask_server.sh        cwd=${CURDIR}/../      shell=True
     Log    message=+++++++THE SERVER IS STARTED CORRECTLY++++++++++         console=True
 
 stop my web site server
     [Documentation]    This keyword aims to stop the website server
+    
     Run Process        ./stop_flask_server.sh        cwd=${CURDIR}/../        shell=True
     Log    message=+++++++THE SERVER IS STOPED CORRECTLY++++++++++          console=True           
 
 maximize my web site on the specific browser
     [Documentation]    This keyword aims to maximize the testing browser
+    
     Log     message=+++++++++++MAXIMIZE THE BROWSER NOW++++++++++++        console=True
     Maximize Browser Window
 
 Close Current Browser
     [Documentation]     This keyword aims to close The current Browser using the SeleniumLibrary keyword "Close Browser"
+    
     Log    message=+++++++++++++CLOSE CURRENT BROWSER++++++++++++++          console=True
     Close Browser
 
 Click On Specific Element
     [Documentation]    This keyword aims to click on SPecific Element using the SeleniumLibrary keyword "Click Element"
     [Arguments]     ${Element_Xpath}    ${WAIT_TIME}=2
+    
     Log     message=CLICKINH ON SPECIFIC ELEMENT ${Element_Xpath}   console=True
     ${status}=    Run Keyword And Return Status     Click Element    xpath=${Element_Xpath}
     IF    "${status}" == "True"

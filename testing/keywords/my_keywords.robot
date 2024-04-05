@@ -114,6 +114,7 @@ Check Presence Of Chedi Box In Our Team Page
 
 check our team page
     [Documentation]    this keyword aims to check the elements in our team page
+    
     Log     message=WAITING FOR 8 SECONDS TO RENDER OUR TEAM PAGE     console=true
     Check Presence Of Oumayma box in our team page
     Log     message=SCROLLING DOWN TO NEXT ELEMENT AND WAITING 2 SECONDS TO RENDER IT PROPERLY     console=True                  
@@ -160,6 +161,7 @@ Scroll web Page
 
 check our home page
     [Documentation]    this keyword aims to check the elements in our home page 
+    
     Log     message=WAITING FOR 8 SECONDS TO RENDER HOME PAGE     console=true
     Sleep    8s
     Check Text In Page For Our Team Button
@@ -170,24 +172,28 @@ check our home page
 
 Check Text In Page For Our Team Button
     [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of OUR_TEAM_BUTTON_TEXT
+    
     Log     messgae=CHECKING_TEXT_INPAGE_FOR_OUR_TEAM_BUTTON        console=True
     Run keyword and continue on failure        Page Should Contain             ${OUR_TEAM_BUTTON_TEXT}
     Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_OUR_TEAM_BUTTON_TEXT.png
 
 Check Text In Page For content Button
     [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of CONTENT_BUTTON_TEXT
+    
     Log     messgae=CHECKING_TEXT_INPAGE_FOR_CONTENT_BUTTON        console=True
     Run keyword and continue on failure        Page Should Contain             ${CONTENT_BUTTON_TEXT}
     Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_CONTENT_BUTTON_TEXT.png
 
 Check Text In Page For Home Button
     [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of HOME_BUTTON_TEXT
+    
     Log     messgae=CHECKING_TEXT_INPAGE_FOR_HOME_BUTTON        console=True
     Run keyword and continue on failure        Page Should Contain             ${HOME_BUTTON_TEXT}
     Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_HOME_BUTTON_TEXT.png
 
 Check Text In Page For Discover More Button
     [Documentation]     this keyword used "Page Should Contain" keyword from SeleniumLibrary to check Text of DISCOVER_MORE_BUTTON_TEXT
+    
     Log     messgae=CHECKING_TEXT_INPAGE_DICOVER_MORE_BUTTON        console=True
     Run keyword and continue on failure        Page Should Contain             ${DISCOVER_MORE_BUTTON_TEXT}
     Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_DISCOVER_MORE_BUTTON_TEXT.png
@@ -205,30 +211,35 @@ Check Text In Page For Discover More Button
 
 Check Text Conclusion In Menu Button
     [Documentation]    this keyword aims to check the Conclusion text in our Menu Button
+    
     Log    message=CHECK_CONCLUSION_BUTTON    console=True
     Run keyword and continue on failure        Page Should Contain             ${CONCLUSION_BUTTON_TEXT}
     Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_CONCLUSION_BUTTON_TEXT.png
 
 Check Text Real World Applications In Menu Button
     [Documentation]    this keyword aims to check the Real World Applications text in our Menu Button
+    
     Log    message=CHECK_REAL_WORLD_APPLICATIONS_BUTTON     console=True
     Run keyword and continue on failure        Page Should Contain             ${REAL_WORLD_APPLICATIONS_BUTTON_TEXT}
     Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_REAL_WORLD_APPLICATIONS_BUTTON_TEXT.png
 
 Check Text Tools for Automation Testing In Menu Button
     [Documentation]    this keyword aims to check the Tools for Automation Testing text in our Menu Button
+    
     Log    message=CHECK_TOOLS_FOR_AUTOMATION_TESTING_BUTTON     console=True
     Run keyword and continue on failure        Page Should Contain             ${TOOLS_FOR_AUTOMATION_TESTING_BUTTON_TEXT}
     Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_TOOLS_FOR_AUTOMATION_TESTING_BUTTON_TEXT.png
 
 Check Text Types of Software Testing In Menu Button
     [Documentation]    this keyword aims to check the Types of Software Testing text in our Menu Button
+    
     Log    message=CHECK_TYPES_OF_SOFTWARE_TESTING_BUTTON     console=True
     Run keyword and continue on failure        Page Should Contain             ${TYPES_OF_SOFTWARE_TESTING_BUTTON_TEXT}
     Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_TYPES_OF_SOFTWARE_TESTING_BUTTON_TEXT.png
 
 Check Text Introduction In Menu Button
     [Documentation]    this keyword aims to check the Introduction text in our Menu Button
+    
     Log    message=CHECK_INTRODUCTION_BUTTON     console=True
     Run keyword and continue on failure        Page Should Contain             ${INTRODUCTION_BUTTON_TEXT}
     Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_INTRODUCTION_BUTTON_TEXT.png
@@ -237,6 +248,7 @@ Check Element Status
     [Documentation]     this keyword aims to check a specific Element status using SeleniumLibrary keyword "Element should Be Enabled"
     ...    and    "Element should Be Disabled" 
     [Arguments]     ${Element_Xpath}    ${status}   
+    
     IF  '${status}' == 'Enabled'
         Log     message=CHECKING_IF_THE_ELEMENT_${Element_Xpath}_IS_CLICKABLE       console=True
         Element Should Be Enabled   xpath=${Element_Xpath}
@@ -249,6 +261,7 @@ Check Element Presence
     [Documentation]    this keyword aims to check element presence using SeleniumLibrary "Element Should Be Visible" keyword
     ...    and    "Element Should Not Be Visible"
     [Arguments]    ${Element_Xpath}    ${status}
+    
     IF  '${status}' == 'Visible'
         Log     message=CHECKING_IF_THE_ELEMENT_${Element_Xpath}_IS_VISIBLE       console=True
         Element Should Be Visible   xpath=${Element_Xpath}
@@ -259,6 +272,7 @@ Check Element Presence
 
 Check And Click On Menu Button
     [Documentation]     this keyword used "Check Element Presence" keyword to check and click on MENU_BUTTON
+    
     Log     message=CHECKING_IF_THE_MENU_IS_NOT_DISPLAYING      console=True
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    status=Visible
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_LIST_XPATH}            status=Not_Visible

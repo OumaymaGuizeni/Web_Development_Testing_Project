@@ -2,11 +2,11 @@
 <!-- Date : fev 23 2024 -->
 
 <div align="center">
-  <img src="/static/capgemini_logo.png" alt="My website">
+  <img src="/src/image1.jpeg" alt="My website" width="200" height="100" >
 
   <br/>
 
-  <h3><b>My website</b></h3>
+  <h3><b>WEB DEVELOPING & TESTING PROJECT</b></h3>
 
 </div>
 
@@ -20,10 +20,6 @@
 [![Selenium](https://img.shields.io/badge/Selenium-%2300724B.svg?style=flat&logo=selenium&logoColor=white)](https://www.selenium.dev/)
 [![Robotframework](https://img.shields.io/badge/Robotframework-%2363AF69.svg?style=flat&logo=robot-framework&logoColor=white)](https://robotframework.org/)
 [![Bash](https://img.shields.io/badge/Bash-%23121011.svg?style=flat&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
-[![Tkinter](https://img.shields.io/badge/tkinter-3.8.12-brightgreen)](https://docs.python.org/3/library/tkinter.html)
-[![JSON](https://img.shields.io/badge/json-3.8.12-brightgreen)](https://docs.python.org/3/library/json.html)
-[![Datetime](https://img.shields.io/badge/datetime-3.8.12-brightgreen)](https://docs.python.org/3/library/datetime.html)
-[![Traceback](https://img.shields.io/badge/traceback-3.8.12-brightgreen)](https://docs.python.org/3/library/traceback.html)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 
@@ -51,16 +47,12 @@
 
 # 📖  Overview <a name="overview"></a>
 
-<p>This initiative. aims to Concatenate all the Data of BMW/CAPGEMINI projects into one place 
-and helps new commers to ramp-up and have a deep understanding of the whole project Present with BMW 
-Projects </p>
+<p> This project is part of my engineering degree coursework, with the goal of enhancing and demonstrating proficiency in web development and testing skills. </p>
 
 <br>
 <br>
 
 ## 🚀 Live_Demo <a name="live_demo"></a>
-
-We provide a demonstration featuring our talented individuals 🥇🏆 , wherein they explain the project, its usage, and the underlying goals of the initiative.
 
 - [Live Demo Link](link_here)
 
@@ -75,9 +67,6 @@ We provide a demonstration featuring our talented individuals 🥇🏆 , wherein
 
 List of dependencies and requirements needed to run the script:
 
-    tkinter (for GUI)
-    messagebox, json, datetime, traceback (standard Python libraries)
-    filedialog, tkinter (for file dialogs in tkinter module)
     robotframework
     SelenuimLibrary 
     Flask
@@ -94,14 +83,13 @@ List of dependencies and requirements needed to run the script:
 Ensure you have the necessary dependencies installed:
 
 ```bash
-sudo apt-get update && sudo apt-get upgrade && sudo apt-get install python3-tk
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get install pip3 install robotframework
 ```
 
 ```bash
-pip install -r requirements.txt
+pip3 install robotframework-seleniumlibrary
 ```
 
-<p> Currently the list of requirements are not available now , it will be available soon </p>
 
 <br>
 <br>
@@ -125,7 +113,7 @@ pip install -r requirements.txt
 ### For Testing : Run all the Test_cases 
 
 
-you can use the script 'run_tests.sh' under the folder Testing_project to run all the test cases 
+you can use the script 'run_tests.sh' under the folder testing to run all the test cases 
 just go there and type : 
 
 
@@ -135,20 +123,26 @@ chmod +x run_tests.sh
 
 to give the script the premissions then execute using " ./ "
 
+Then The Script will give you options and you can select the Option N°2
+
 
 ### For Testing :  Run a specifique Test Case 
 
-
-you can run one test case , so you go under the Testing_Project folder then under the test_suites project then run the command 
+you can use the script 'run_tests.sh' under the folder testing to run one specific  test case 
+just go there and type : 
 
 
 ```bash 
-robot -d <result_folder> <name_of_the_test_case>
+chmod +x run_tests.sh
 ```
 
+to give the script the premissions then execute using " ./ "
 
-Note : make sure in this case the run the application app.py of the website first and verifiy that it's running 
+Then The Script will give you options and you can select the Option N°1 and then the list of available test cases will be show and you can select whethever you like 
 
+
+<br>
+<br>
 
 
 ## ❓ FAQ  <a name="faq"></a>
@@ -161,22 +155,12 @@ Note : make sure in this case the run the application app.py of the website firs
 <br>
 
 
-## New UI for Testing Purpose 
-
-Under the testing Project , we create a UI to facailaite Testing and interaction with our Testing Project 
-the App name is "myTesting_app.py"
-
-<br>
-<br>
-
-
 ## Contributing
 
 This repository is private and not open for public contributions.
 
 <br>
 <br>
-
 
 
 ## 📝 License <a name="license"></a>

@@ -315,3 +315,15 @@ Check The Presence Of Types Of Software Testing Text In Content Page
 
     Run keyword and continue on failure     Check Element Presence      Element_Xpath=${TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
     Capture Element Screenshot      xpath=${TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Principles of Testing Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Principles of Testing" in the content page
+
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${PRINCIPELS_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}         status=Visible
+    Capture Element Screenshot      xpath=${PRINCIPELS_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}         filename=Screenshots/${TEST NAME}/SCREENSHOT_PRINCIPELS_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Types of Testing Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Types of Testing" in the content page
+
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${TYPES_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${TYPES_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}         filename=Screenshots/${TEST NAME}/SCREENSHOT_TYPES_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH.png

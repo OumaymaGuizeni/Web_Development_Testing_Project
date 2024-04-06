@@ -51,3 +51,5 @@ ${REAL_WORLD_APPLICATIONS_BUTTON_TEXT}                                  Real-wor
 ${CONCLUSION_BUTTON_TEXT}                                               Conclusion
 ${INTRODUCTION_TEXT_IN_CONTENT_PAGE_XPATH}                              //*[@id="Introduction"]/h1
 ${TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                 //*[@id="Types_of_Software_Testing"]/h1
+${PRINCIPELS_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                     /html/body/div[2]/h2[1]
+${TYPES_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                          /html/body/div[2]/h2[2]

@@ -82,10 +82,10 @@ read -p "Enter your choice (default is $default_reply): " response
 if [ "$response" -eq 1 ]; then
     echo "Checking if The Dependacy are Present in Your Machine and Install in them "
     pip install robotframework-metrics==3.3.3
-    Sleep   5
-    Current_Directory =${pwd}
-    echo "${Current_Directory}"
-    cd /results
+    sleep   5
+    pwd
+    cd results/
+    pwd
     robotmetrics
 else
     echo "Exiting The Report Will be Not Generated"

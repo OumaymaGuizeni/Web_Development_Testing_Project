@@ -71,9 +71,27 @@ else
     exit 1
 fi
 
+default_reply=1
 echo "Testcases are finished Executing Do you want to Generate The Data Report Summary ?"
-echo "1)Yes"
-echo "2)No"
+echo "1) Yes"
+echo "2) No"
+
+# Prompt the user for input and store it in the variable 'response'
+read -p "Enter your choice (default is $default_reply): " response
+
+if [ "$response" -eq 1 ]; then
+    echo "Checking if The Dependacy are Present in Your Machine and Install in them "
+    pip install robotframework-metrics==3.3.3
+    Sleep   5
+    Current_Directory =${pwd}
+    echo "${Current_Directory}"
+    cd /results
+    robotmetrics
+else
+    echo "Exiting The Report Will be Not Generated"
+    exit 1 
+fi
+
 
 
 

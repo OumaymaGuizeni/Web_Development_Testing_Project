@@ -44,7 +44,7 @@ Close Current Browser
 
 Click On Specific Element
     [Documentation]    This keyword aims to click on SPecific Element using the SeleniumLibrary keyword "Click Element"
-    [Arguments]     ${Element_Xpath}    ${WAIT_TIME}=2
+    [Arguments]     ${Element_Xpath}    ${WAIT_TIME}=1
     
     Log     message=CLICKINH ON SPECIFIC ELEMENT ${Element_Xpath}   console=True
     ${status}=    Run Keyword And Return Status     Click Element    xpath=${Element_Xpath}
@@ -307,23 +307,34 @@ Check And Click On Menu Button
 Check The Presence Of Introduction Text In Content Page
     [Documentation]     this keyword Check the existance of the Text "Introduction" in the content page
 
+    Log     message=CHECKING_THE_PRESENCE_OF_INTRODUCTION_TEXT_IN_CONTENT_PAGE        console=True
     Run keyword and continue on failure     Check Element Presence      Element_Xpath=${INTRODUCTION_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
     Capture Element Screenshot      xpath=${INTRODUCTION_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_INTRODUCTION_TEXT_IN_CONTENT_PAGE_XPATH.png
 
 Check The Presence Of Types Of Software Testing Text In Content Page
     [Documentation]     this keyword Check the existance of the Text "Types Of Software Testing" in the content page
 
+    Log     message=CHECKING_THE_PRESENCE_OF_TYOES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE        console=True
     Run keyword and continue on failure     Check Element Presence      Element_Xpath=${TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
     Capture Element Screenshot      xpath=${TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH.png
 
 Check The Presence Of Principles of Testing Text In Content Page
     [Documentation]     this keyword Check the existance of the Text "Principles of Testing" in the content page
 
+    Log     message=CHECKING_THE_PRESENCE_OF_PRINCIPLES_OF_TESTING_TEXT_IN_CONTENT_PAGE        console=True
     Run keyword and continue on failure     Check Element Presence      Element_Xpath=${PRINCIPELS_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}         status=Visible
     Capture Element Screenshot      xpath=${PRINCIPELS_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}         filename=Screenshots/${TEST NAME}/SCREENSHOT_PRINCIPELS_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH.png
 
 Check The Presence Of Types of Testing Text In Content Page
     [Documentation]     this keyword Check the existance of the Text "Types of Testing" in the content page
 
+    Log     message=CHECKING_THE_PRESENCE_OF_TYPES_OF_TESTING_TEXT_IN_CONTENT_PAGE        console=True
     Run keyword and continue on failure     Check Element Presence      Element_Xpath=${TYPES_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
     Capture Element Screenshot      xpath=${TYPES_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}         filename=Screenshots/${TEST NAME}/SCREENSHOT_TYPES_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Types Of Software Testing Image In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Types Of Software Testing Image" in the content page with the SeleniumLibrary keyword "Page Should Contain Image
+
+    Log     message=CHECKING_THE_PRESENCE_OF_TYPES_OF_SOFTWARE_TESTING_IMAGE_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Page Should Contain Image       xpath=${TYPES_OF_SW_TESTING_BIG_IMAGE_IN_CONTENT_PAGE_XPATH}        
+    Capture Element Screenshot      xpath=${TYPES_OF_SW_TESTING_BIG_IMAGE_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_TYPES_OF_SW_TESTING_BIG_IMAGE_IN_CONTENT_PAGE_XPATH.png

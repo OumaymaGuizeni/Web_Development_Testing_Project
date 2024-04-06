@@ -62,7 +62,6 @@ if [ "$response" -eq 1 ]; then
 elif [ "$response" -eq 2 ]; then
     echo "You chose All Test Cases."
     # Add your code to handle All Test Cases here
-    # Run the Robot Framework tests in the foreground
     robot -d results "${TEST_SUITES[@]}"
 
 else

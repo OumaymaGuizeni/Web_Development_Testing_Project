@@ -53,3 +53,4 @@ ${INTRODUCTION_TEXT_IN_CONTENT_PAGE_XPATH}                              //*[@id=
 ${TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                 //*[@id="Types_of_Software_Testing"]/h1
 ${PRINCIPELS_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                     /html/body/div[2]/h2[1]
 ${TYPES_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                          /html/body/div[2]/h2[2]
+${TYPES_OF_SW_TESTING_BIG_IMAGE_IN_CONTENT_PAGE_XPATH}                  /html/body/div[2]/div[1]/img

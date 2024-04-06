@@ -22,6 +22,9 @@ Test_our_content_page
     Check The Presence Of Types Of Software Testing Text In Content Page
     Check The Presence Of Principles of Testing Text In Content Page
     Check The Presence Of Types of Testing Text In Content Page
+    Scroll web Page    pixel_number=350
+    Check The Presence Of Types Of Software Testing Image In Content Page
+
     
     [Teardown]    Run Keywords    Close Current Browser 
     ...    AND    stop my web site server

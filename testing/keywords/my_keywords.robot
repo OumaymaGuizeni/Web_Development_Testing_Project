@@ -303,3 +303,15 @@ Check And Click On Menu Button
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_BUTTON_IMAGE_XPATH}    status=Visible
     Run keyword and continue on failure        Check Element Presence       Element_Xpath=${MENU_LIST_XPATH}            status=Not_Visible
     Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_MENU_BUTTON_IMAGE_XPATH_3.png
+
+Check The Presence Of Introduction Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Introduction" in the content page
+
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${INTRODUCTION_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${INTRODUCTION_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_INTRODUCTION_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Types Of Software Testing Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Types Of Software Testing" in the content page
+
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH.png

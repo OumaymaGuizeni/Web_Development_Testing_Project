@@ -71,6 +71,10 @@ else
     exit 1
 fi
 
+echo "Testcases are finished Executing Do you want to Generate The Data Report Summary ?"
+echo "1)Yes"
+echo "2)No"
+
 
 
 

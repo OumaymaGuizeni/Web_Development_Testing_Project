@@ -17,7 +17,9 @@ Test_our_content_page
     maximize my web site on the specific browser
     Click On Specific Element       Element_Xpath=${CONTENT_BUTTON_XPATH}       WAIT_TIME=2
     Check And Click On Menu Button
-    # To develope a continue for This Test Case
+    Check The Presence Of Introduction Text In Content Page
+    Scroll web Page    pixel_number=200
+    Check The Presence Of Types Of Software Testing Text In Content Page
     
     [Teardown]    Run Keywords    Close Current Browser 
     ...    AND    stop my web site server

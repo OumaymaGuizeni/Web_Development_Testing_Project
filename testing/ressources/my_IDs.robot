@@ -43,9 +43,11 @@ ${CHECK_CHEDI_IMAGE_XPATH}                  /html/body/div[8]/div/div/div[2]/img
 
 # --------------- Variables for OUR Content Page -----------------------------
 
-${MENU_LIST_XPATH}                                         /html/body/div[1]/div/nav/div/div
-${INTRODUCTION_BUTTON_TEXT}                                Introduction
-${TYPES_OF_SOFTWARE_TESTING_BUTTON_TEXT}                   Types of Softawre Testing
-${TOOLS_FOR_AUTOMATION_TESTING_BUTTON_TEXT}                Tools for Automation Testing
-${REAL_WORLD_APPLICATIONS_BUTTON_TEXT}                     Real-world app
-${CONCLUSION_BUTTON_TEXT}                                  Conclusion
+${MENU_LIST_XPATH}                                                      /html/body/div[1]/div/nav/div/div
+${INTRODUCTION_BUTTON_TEXT}                                             Introduction
+${TYPES_OF_SOFTWARE_TESTING_BUTTON_TEXT}                                Types of Softawre Testing
+${TOOLS_FOR_AUTOMATION_TESTING_BUTTON_TEXT}                             Tools for Automation Testing
+${REAL_WORLD_APPLICATIONS_BUTTON_TEXT}                                  Real-world app
+${CONCLUSION_BUTTON_TEXT}                                               Conclusion
+${INTRODUCTION_TEXT_IN_CONTENT_PAGE_XPATH}                              //*[@id="Introduction"]/h1
+${TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                 //*[@id="Types_of_Software_Testing"]/h1

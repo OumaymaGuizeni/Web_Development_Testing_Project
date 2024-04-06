@@ -78,6 +78,11 @@ echo "2) No"
 # Prompt the user for input and store it in the variable 'response'
 read -p "Enter your choice (default is $default_reply): " response
 
+# If the user didn't provide any input, set the response to the default value
+if [ -z "$response" ]; then
+    response=$default_reply
+fi
+
 if [ "$response" -eq 1 ]; then
     echo "Checking if The Dependacy are Present in Your Machine and Install in them "
     pip install robotframework-metrics==3.3.3

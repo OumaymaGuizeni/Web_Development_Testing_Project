@@ -346,3 +346,45 @@ Check The Presence Of Types Of Software Testing Image In Content Page
     Log     message=CHECKING_THE_PRESENCE_OF_TYPES_OF_SOFTWARE_TESTING_IMAGE_IN_CONTENT_PAGE        console=True
     Run keyword and continue on failure     Page Should Contain Image       xpath=${TYPES_OF_SW_TESTING_BIG_IMAGE_IN_CONTENT_PAGE_XPATH}        
     Capture Element Screenshot      xpath=${TYPES_OF_SW_TESTING_BIG_IMAGE_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_TYPES_OF_SW_TESTING_BIG_IMAGE_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Manual Testing Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Manual Testing" in the content page
+
+    Log     message=CHECKING_THE_PRESENCE_OF_MANUAL_TESTING_TEXT_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${MANUAL_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${MANUAL_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}         filename=Screenshots/${TEST NAME}/SCREENSHOT_MANUAL_TESTING_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Automation Testing Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Automation Testing" in the content page
+
+    Log     message=CHECKING_THE_PRESENCE_OF_AUTOMATION_TESTING_TEXT_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${AUTOMATION_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${AUTOMATION_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}         filename=Screenshots/${TEST NAME}/SCREENSHOT_AUTOMATION_TESTING_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Scope of Work Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Scope of Work" in the content page
+
+    Log     message=CHECKING_THE_PRESENCE_OF_SCOPE_OF_WORK_TEXT_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${SCOPE_OF_WORK_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${SCOPE_OF_WORK_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_SCOPE_OF_WORK_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Description of the Testing Environment Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Description of the Testing Environment" in the content page
+
+    Log     message=CHECKING_THE_PRESENCE_OF_DESCRIPTION_OF_THE_TESTING_ENVIRONMENT_TEXT_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${DESCRIPTION_OF_THE_TESTING_ENVIRONMENT_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${DESCRIPTION_OF_THE_TESTING_ENVIRONMENT_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_DESCRIPTION_OF_THE_TESTING_ENVIRONMENT_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Types of Testing Covered Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Types of Testing Covered" in the content page
+
+    Log     message=CHECKING_THE_PRESENCE_OF_TYPES_OF_TESTING_COVERED_TEXT_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${TYPES_OF_TESTING_COVERED_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${TYPES_OF_TESTING_COVERED_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_TYPES_OF_TESTING_COVERED_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Apache JMeter Image In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Apache JMeter Image" in the content page with the SeleniumLibrary keyword "Page Should Contain Image
+
+    Log     message=CHECKING_THE_PRESENCE_OF_APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Page Should Contain Image       xpath=${APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE_XPATH}        
+    Capture Element Screenshot      xpath=${APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE_XPATH.png

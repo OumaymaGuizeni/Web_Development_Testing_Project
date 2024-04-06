@@ -24,7 +24,19 @@ Test_our_content_page
     Check The Presence Of Types of Testing Text In Content Page
     Scroll web Page    pixel_number=350
     Check The Presence Of Types Of Software Testing Image In Content Page
+    Scroll web Page    pixel_number=1200
+    Check The Presence Of Manual Testing Text In Content Page
+    Scroll web Page    pixel_number=500
+    Check The Presence Of Automation Testing Text In Content Page
+    Scroll web Page    pixel_number=350
+    Check The Presence Of Scope of Work Text In Content Page
+    Scroll web Page    pixel_number=350
+    Check The Presence Of Description of the Testing Environment Text In Content Page
+    Scroll web Page    pixel_number=350
+    Check The Presence Of Types of Testing Covered Text In Content Page
+    Scroll web Page    pixel_number=350
 
-    
+
+
     [Teardown]    Run Keywords    Close Current Browser 
     ...    AND    stop my web site server

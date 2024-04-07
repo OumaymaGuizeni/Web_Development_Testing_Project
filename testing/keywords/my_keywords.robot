@@ -222,19 +222,26 @@ Check Text Conclusion In Menu Button
     Run keyword and continue on failure        Page Should Contain             ${CONCLUSION_BUTTON_TEXT}
     Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_CONCLUSION_BUTTON_TEXT.png
 
-Check Text Real World Applications In Menu Button
-    [Documentation]    this keyword aims to check the Real World Applications text in our Menu Button
+Check Text Testing Phases In Menu Button
+    [Documentation]    this keyword aims to check the Testing Phases text in our Menu Button
     
-    Log    message=CHECK_REAL_WORLD_APPLICATIONS_BUTTON     console=True
-    Run keyword and continue on failure        Page Should Contain             ${REAL_WORLD_APPLICATIONS_BUTTON_TEXT}
-    Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_REAL_WORLD_APPLICATIONS_BUTTON_TEXT.png
+    Log    message=CHECK_TESTING_PHASES_BUTTON    console=True
+    Run keyword and continue on failure        Page Should Contain             ${TESTING_PHASES_BUTTON_TEXT}
+    Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_CTESTING_PHASES_BUTTON_TEXT.png
 
-Check Text Tools for Automation Testing In Menu Button
-    [Documentation]    this keyword aims to check the Tools for Automation Testing text in our Menu Button
+Check Text Methodology Used In Menu Button
+    [Documentation]    this keyword aims to check the Methodology Used text in our Menu Button
     
-    Log    message=CHECK_TOOLS_FOR_AUTOMATION_TESTING_BUTTON     console=True
-    Run keyword and continue on failure        Page Should Contain             ${TOOLS_FOR_AUTOMATION_TESTING_BUTTON_TEXT}
-    Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_TOOLS_FOR_AUTOMATION_TESTING_BUTTON_TEXT.png
+    Log    message=CHECK_METHODOLOGY_USED_BUTTON     console=True
+    Run keyword and continue on failure        Page Should Contain             ${METHODOLOGY_USED_BUTTON_TEXT}
+    Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_METHODOLOGY_USED_BUTTON_TEXT.png
+
+Check Text Scope of Work In Menu Button
+    [Documentation]    this keyword aims to check the Scope of Work text in our Menu Button
+    
+    Log    message=CHECK_SCOPE_OF_WORK_BUTTON     console=True
+    Run keyword and continue on failure        Page Should Contain             ${SCOPE_OF_WORK_BUTTON_TEXT}
+    Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_SCOPE_OF_WORK_BUTTON_TEXT.png
 
 Check Text Types of Software Testing In Menu Button
     [Documentation]    this keyword aims to check the Types of Software Testing text in our Menu Button
@@ -293,8 +300,9 @@ Check And Click On Menu Button
     Capture Element Screenshot      xpath=${MENU_LIST_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_MENU_LIST_XPATH_1.png
     Check Text Introduction In Menu Button
     Check Text Types of Software Testing In Menu Button
-    Check Text Tools for Automation Testing In Menu Button
-    Check Text Real World Applications In Menu Button
+    Check Text Scope of Work In Menu Button
+    Check Text Methodology Used In Menu Button
+    Check Text Testing Phases In Menu Button
     Check Text Conclusion In Menu Button
     Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_MENU_LIST_XPATH.png
     Log     message=CLICKING_ON_THE_MENU_AGAIN_TO_CLOSE_IT      console=True

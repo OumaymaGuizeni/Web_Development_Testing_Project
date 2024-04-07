@@ -60,7 +60,7 @@ ${AUTOMATION_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                        /html/bo
 ${SCOPE_OF_WORK_TEXT_IN_CONTENT_PAGE_XPATH}                             /html/body/div[2]/section[3]/h1
 ${DESCRIPTION_OF_THE_TESTING_ENVIRONMENT_TEXT_IN_CONTENT_PAGE_XPATH}    /html/body/div[2]/section[3]/h2[1]
 ${TYPES_OF_TESTING_COVERED_TEXT_IN_CONTENT_PAGE_XPATH}                  /html/body/div[2]/section[3]/h2[2]
-${APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE_XPATH}                            /html/body/div[2]/section[3]/section/div/img
+${SCRIPT_IMAGE_IN_CONTENT_PAGE_XPATH}                                   /html/body/div[2]/section[3]/section/div/img
 ${METHODOLOGY_USED_TEXT_IN_CONTENT_PAGE_XPATH}                          /html/body/div[2]/section[4]/h1
 ${APPROACH_TO_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                       /html/body/div[2]/section[4]/h2[1]
 ${AGILE_METHODOLOGY_IMAGE_IN_CONTENT_PAGE_XPATH}                        /html/body/div[2]/section[4]/section[1]/div/img

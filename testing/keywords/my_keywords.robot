@@ -382,12 +382,12 @@ Check The Presence Of Types of Testing Covered Text In Content Page
     Run keyword and continue on failure     Check Element Presence      Element_Xpath=${TYPES_OF_TESTING_COVERED_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
     Capture Element Screenshot      xpath=${TYPES_OF_TESTING_COVERED_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_TYPES_OF_TESTING_COVERED_TEXT_IN_CONTENT_PAGE_XPATH.png
 
-Check The Presence Of Apache JMeter Image In Content Page
-    [Documentation]     this keyword Check the existance of the Text "Apache JMeter Image" in the content page with the SeleniumLibrary keyword "Page Should Contain Image
+Check The Presence Of Script Image In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Script Image" in the content page with the SeleniumLibrary keyword "Page Should Contain Image
 
-    Log     message=CHECKING_THE_PRESENCE_OF_APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE        console=True
-    Run keyword and continue on failure     Page Should Contain Image       xpath=${APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE_XPATH}        
-    Capture Element Screenshot      xpath=${APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE_XPATH.png
+    Log     message=CHECKING_THE_PRESENCE_OF_SCRIPT_IMAGE_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Page Should Contain Image       xpath=${SCRIPT_IMAGE_IN_CONTENT_PAGE_XPATH}        
+    Capture Element Screenshot      xpath=${SCRIPT_IMAGE_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_SCRIPT_IMAGE_IN_CONTENT_PAGE_XPATH.png
 
 Check The Presence Of Methodology Used Text In Content Page
     [Documentation]     this keyword Check the existance of the Text "Methodology Used" in the content page

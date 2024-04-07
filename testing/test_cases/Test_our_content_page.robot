@@ -35,7 +35,7 @@ Test_our_content_page
     Scroll web Page    pixel_number=1350
     Check The Presence Of Types of Testing Covered Text In Content Page
     Scroll web Page    pixel_number=1500
-    Check The Presence Of Apache JMeter Image In Content Page
+    Check The Presence Of Script Image In Content Page
     Scroll web Page    pixel_number=1650
     Check The Presence Of Methodology Used Text In Content Page
     Scroll web Page    pixel_number=1800

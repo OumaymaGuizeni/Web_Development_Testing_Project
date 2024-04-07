@@ -55,3 +55,9 @@ ${TYPES_OF_SOFTWARE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                 //*[@id=
 ${PRINCIPELS_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                     /html/body/div[2]/h2[1]
 ${TYPES_OF_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                          /html/body/div[2]/h2[2]
 ${TYPES_OF_SW_TESTING_BIG_IMAGE_IN_CONTENT_PAGE_XPATH}                  /html/body/div[2]/div[1]/img
+${MANUAL_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                            /html/body/div[2]/h3[1]
+${AUTOMATION_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                        /html/body/div[2]/h3[2]
+${SCOPE_OF_WORK_TEXT_IN_CONTENT_PAGE_XPATH}                             /html/body/div[2]/section[3]/h1
+${DESCRIPTION_OF_THE_TESTING_ENVIRONMENT_TEXT_IN_CONTENT_PAGE_XPATH}    /html/body/div[2]/section[3]/h2[1]
+${TYPES_OF_TESTING_COVERED_TEXT_IN_CONTENT_PAGE_XPATH}                  /html/body/div[2]/section[3]/h2[2]
+${APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE_XPATH}                            /html/body/div[2]/section[3]/section/div/img

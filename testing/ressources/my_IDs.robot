@@ -61,3 +61,12 @@ ${SCOPE_OF_WORK_TEXT_IN_CONTENT_PAGE_XPATH}                             /html/bo
 ${DESCRIPTION_OF_THE_TESTING_ENVIRONMENT_TEXT_IN_CONTENT_PAGE_XPATH}    /html/body/div[2]/section[3]/h2[1]
 ${TYPES_OF_TESTING_COVERED_TEXT_IN_CONTENT_PAGE_XPATH}                  /html/body/div[2]/section[3]/h2[2]
 ${APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE_XPATH}                            /html/body/div[2]/section[3]/section/div/img
+${METHODOLOGY_USED_TEXT_IN_CONTENT_PAGE_XPATH}                          /html/body/div[2]/section[4]/h1
+${APPROACH_TO_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                       /html/body/div[2]/section[4]/h2[1]
+${AGILE_METHODOLOGY_IMAGE_IN_CONTENT_PAGE_XPATH}                        /html/body/div[2]/section[4]/section[1]/div/img
+${TESTING_STRATEGIES_EMPLOYED_TEXT_IN_CONTENT_PAGE_XPATH}               /html/body/div[2]/section[4]/h2[2]
+${AUTOMATED_VS_MANUAL_TESTING_IMAGE_IN_CONTENT_PAGE_XPATH}              /html/body/div[2]/section[4]/section[2]/div/img
+${TESTING_PHASES_TEXT_IN_CONTENT_PAGE_XPATH}                            /html/body/div[2]/section[5]/h1
+${FUNCTIONALITY_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                     /html/body/div[2]/section[5]/h2[1]
+${PERFORMANCE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                       /html/body/div[2]/section[5]/h2[2]
+${CONCLUSION_TEXT_IN_CONTENT_PAGE_XPATH}                                /html/body/div[2]/section[6]/h1

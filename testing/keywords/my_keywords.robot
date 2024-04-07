@@ -388,3 +388,67 @@ Check The Presence Of Apache JMeter Image In Content Page
     Log     message=CHECKING_THE_PRESENCE_OF_APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE        console=True
     Run keyword and continue on failure     Page Should Contain Image       xpath=${APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE_XPATH}        
     Capture Element Screenshot      xpath=${APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_APAHCE_JMETER_IMAGE_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Methodology Used Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Methodology Used" in the content page
+
+    Log     message=CHECKING_THE_PRESENCE_OF_METHODOLOGY_USED_TEXT_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${METHODOLOGY_USED_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${METHODOLOGY_USED_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_METHODOLOGY_USED_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Approach to Testing Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Approach to Testing" in the content page
+
+    Log     message=CHECKING_THE_PRESENCE_OF_APPROACH_TO_TESTING_TEXT_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${APPROACH_TO_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${APPROACH_TO_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_APPROACH_TO_TESTING_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Agile Methodology Image In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Agile Methodology Image" in the content page with the SeleniumLibrary keyword "Page Should Contain Image
+
+    Log     message=CHECKING_THE_PRESENCE_OF_AGILE_METHODOLOGY_IMAGE_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Page Should Contain Image       xpath=${AGILE_METHODOLOGY_IMAGE_IN_CONTENT_PAGE_XPATH}        
+    Capture Element Screenshot      xpath=${AGILE_METHODOLOGY_IMAGE_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_AGILE_METHODOLOGY_IMAGE_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Testing Strategies Employed Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Testing Strategies Employed" in the content page
+
+    Log     message=CHECKING_THE_PRESENCE_OF_TESTING_STRATEGIES_EMPLOYED_TEXT_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${TESTING_STRATEGIES_EMPLOYED_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${TESTING_STRATEGIES_EMPLOYED_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_TESTING_STRATEGIES_EMPLOYED_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Automated VS Manual Testing Image In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Automated VS Manual Testing Image" in the content page with the SeleniumLibrary keyword "Page Should Contain Image
+
+    Log     message=CHECKING_THE_PRESENCE_OF_AUTOMATED_VS_MANUAL_TESTING_IMAGE_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Page Should Contain Image       xpath=${AUTOMATED_VS_MANUAL_TESTING_IMAGE_IN_CONTENT_PAGE_XPATH}        
+    Capture Element Screenshot      xpath=${AUTOMATED_VS_MANUAL_TESTING_IMAGE_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_AUTOMATED_VS_MANUAL_TESTING_IMAGE_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Testing Phases Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Testing Phases" in the content page
+
+    Log     message=CHECKING_THE_PRESENCE_OF_TESTING_PHASES_TEXT_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${TESTING_PHASES_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${TESTING_PHASES_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_TESTING_PHASES_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Functionality testing Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Functionality testing" in the content page
+
+    Log     message=CHECKING_THE_PRESENCE_OF_FUNCTIONALITY_TESTING_TEXT_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${FUNCTIONALITY_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${FUNCTIONALITY_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_FUNCTIONALITY_TESTING_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Performance testing Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Performance testing" in the content page
+
+    Log     message=CHECKING_THE_PRESENCE_OF_PERFORMANCE_TESTING_TEXT_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${PERFORMANCE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${PERFORMANCE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_PERFORMANCE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH.png
+
+Check The Presence Of Conclusion Text In Content Page
+    [Documentation]     this keyword Check the existance of the Text "Conclusion" in the content page
+
+    Log     message=CHECKING_THE_PRESENCE_OF_CONCLUSION_TEXT_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Check Element Presence      Element_Xpath=${CONCLUSION_TEXT_IN_CONTENT_PAGE_XPATH}        status=Visible
+    Capture Element Screenshot      xpath=${CONCLUSION_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_CONCLUSION_TEXT_IN_CONTENT_PAGE_XPATH.png
+

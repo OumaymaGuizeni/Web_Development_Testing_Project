@@ -227,7 +227,7 @@ Check Text Testing Phases In Menu Button
     
     Log    message=CHECK_TESTING_PHASES_BUTTON    console=True
     Run keyword and continue on failure        Page Should Contain             ${TESTING_PHASES_BUTTON_TEXT}
-    Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_CTESTING_PHASES_BUTTON_TEXT.png
+    Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_TESTING_PHASES_BUTTON_TEXT.png
 
 Check Text Methodology Used In Menu Button
     [Documentation]    this keyword aims to check the Methodology Used text in our Menu Button

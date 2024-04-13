@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # this script will run all the test cases of the project 
 # you should add all new test cases here with the correct declaration 
 # this script will be used in the pipeline CI/CD of the Project 
@@ -10,6 +11,7 @@ TEST_SUITES=(
     "test_cases/Test_our_team_page.robot"
     "test_cases/Test_our_content_menu.robot"
     "test_cases/Test_our_content_page.robot"
+    "test_cases/Test_our_footer.robot"
 )
 
 # **************************************************************************
@@ -84,7 +86,8 @@ if [ -z "$response" ]; then
 fi
 
 if [ "$response" -eq 1 ]; then
-    echo "Checking if The Dependacy are Present in Your Machine and Install in them "
+    echo "Checking if The Dependacy are Present in Your Machine and Installing them "
+    sleep   2
     pip install robotframework-metrics==3.3.3
     sleep   5
     pwd

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual_Testing</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/ehwliTbTSTW7T33U_Rir2pJfPoBPYCsYGStNxqnoBHR0pICIjZ9CWJ0hMQTB52-kXk8" type="image/x-icon">
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e7efc7;
+}
+h1{
+    text-align: center;
+    background-color: rgb(192, 216, 165);
+}
+p{
+    padding-left: 15px;
+}
+.image img{
+    width: 50%;
+    margin: 30px auto; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+} 
+.image p{
+    padding-left: 600px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+ol{
+    list-style-type: decimal;
+}
+ul {
+    list-style-type: disc; 
+}
+table {        
+    width: 70%;
+    margin: 30px auto; 
+    border-collapse:separate;
+    background-color: #000;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    background-color: #e7efc7;
+}
+th {
+    background-color: rgba(160, 215, 102);
+}
+.back-button {
+    position: absolute;
+    top: 7px; 
+    left: 10px; 
+    padding: 5px 10px; 
+    background-color: #f0f0f0; 
+    color: #000; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+}
+.back-button:hover {
+    background-color: rgba(160, 215, 102);
+    color: #000;
+}
+    </style>
+</head>
+<body>
+
+<!--Grey box testing-->
+    <section id="Grey_Box_Testing">
+        <h1>Grey Box Testing</h1>
+        <a href="javascript:history.back()" class="back-button">&#9664; Back</a>
+        <h3>Definition</h3>
+        <p>Gray Box Testing is a software testing approach that amalgamates elements of both Black Box Testing and White Box Testing methodologies.
+            In Black Box Testing, testers operate without knowledge of the internal structure of the system, whereas White Box Testing involves full comprehension of the internal workings.
+            Gray Box Testing falls between these extremes, offering partial insight into the internal structure, including access to certain data structures and algorithms to formulate test cases.
+            The term "Gray Box" reflects the semi-transparent nature of the software being tested, allowing testers to discern some internal components.
+            This method is particularly adept at uncovering context-specific errors, especially within web systems.
+            Gray Box Testing relies heavily on requirement-based test case generation, leveraging all available conditions prior to executing the test program.
+        </p>
+        <div class="image">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190422152310/pp110.png">
+            <p>Grey Box Testing</p>
+        </div>        
+    </section>
+    <section>
+        <h3>Objectives of Gray Box Testing</h3>
+        <ol>
+            <li>To harness the benefits of both black box testing and white box testing concurrently.</li>
+            <li>To integrate insights from developers and testers alike.</li>
+            <li>To enhance the overall quality of the product.</li>
+            <li>To streamline the extensive process of functional and non-functional testing, thereby reducing overhead.</li>
+            <li>To allocate developers ample time to rectify defects.</li>
+          <li>To assess functionality from a user-centric perspective rather than solely from a designer's viewpoint.</li>        </ol>
+    </section>
+    <section>
+        <h3>Advantages & Disadvantages</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Advantages of Grey Box Testing</th>
+                    <th>Disadvantages of Grey Box Testing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><h6>Enhanced Test Coverage:</h6>Grey Box Testing allows testers to have a partial view of the internal implementation, enabling them to design more comprehensive test cases and identify potential errors that might be overlooked in Black Box testing.</td>
+                    <td><h6>Increased Complexity:</h6>Grey Box Testing can be more complex to implement than Black Box or White Box approaches due to the need to manage both functional and structural aspects of the software.</td>
+                </tr>
+                <tr>
+                    <td><h6>Precise Issue Identification:</h6>By having access to certain parts of the internal implementation, testers can pinpoint the sources of errors more accurately, facilitating their resolution.</td>
+                    <td><h6>Dependency on Implementation:</h6>Similar to White Box Testing, Grey Box Testing can be affected by changes in the internal implementation, requiring frequent adjustments to test cases.</td>
+                </tr>
+                <tr>
+                    <td><h6>Optimization of Testing Process:</h6>By combining Black Box and White Box approaches, Grey Box Testing offers a balance between test coverage and process complexity, which can lead to better overall testing efficiency.</td>
+                    <td><h6>Difficulty in Finding the Right Balance:</h6>Determining the amount of information to disclose to testers can be tricky, as too little information may result in inadequate test coverage, while too much information can introduce biases into the testing process.</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

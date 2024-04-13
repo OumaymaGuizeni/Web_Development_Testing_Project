@@ -4,6 +4,8 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource    ../keywords/my_keywords.robot
+Test Template           Run keyword and continue on failure
+
 
 *** Test Cases ***
 Test_our_footer

@@ -506,8 +506,8 @@ Check Text Content In Footer
 Check Footer In all pages
     [Documentation]     this keyword used "FOOTER" keyword to check the Footer
 
-   # Log     message=CHECKING_THE_PRESENCE_OF_FOOTER_IMAGE_IN_CONTENT_PAGE      console=True
-   # Run keyword and continue on failure        Check Element Presence       Element_Xpath=${FOOTER_IMAGE_XPATH}           status=Visible
+    # Log     message=CHECKING_THE_PRESENCE_OF_FOOTER_IMAGE_IN_CONTENT_PAGE      console=True
+    # Run keyword and continue on failure        Check Element Presence       Element_Xpath=${FOOTER_IMAGE_XPATH}           status=Visible
     # Note this is New Keyword for Taking Screenshots of a specific Element
     Check Image Facebook In Footer
     Check Image Instagram In Footer

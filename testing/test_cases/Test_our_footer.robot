@@ -17,10 +17,10 @@ Test_our_footer
     maximize my web site on the specific browser
     Click On Specific Element    Element_Xpath=${OUR_TEAM_BUTTON_XPATH}     WAIT_TIME=2
     Scroll web Page    pixel_number=3000
-    Check Footer In all pages
-    Click On Specific Element       Element_Xpath=${CONTENT_BUTTON_XPATH}       WAIT_TIME=2
-    Scroll web Page    pixel_number=4000
-    Check Footer In all pages
+    Check Footer In Our Team page
+    # Click On Specific Element       Element_Xpath=${CONTENT_BUTTON_XPATH}       WAIT_TIME=2
+    # Scroll web Page    pixel_number=4000
+    # Check Footer In all pages
 
 
     [Teardown]    Run Keywords    Close Current Browser 

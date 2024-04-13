@@ -70,3 +70,14 @@ ${TESTING_PHASES_TEXT_IN_CONTENT_PAGE_XPATH}                            /html/bo
 ${FUNCTIONALITY_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                     /html/body/div[2]/section[5]/h2[1]
 ${PERFORMANCE_TESTING_TEXT_IN_CONTENT_PAGE_XPATH}                       /html/body/div[2]/section[5]/h2[2]
 ${CONCLUSION_TEXT_IN_CONTENT_PAGE_XPATH}                                /html/body/div[2]/section[6]/h1
+
+# --------------- Variables for OUR Footer -----------------------------
+
+${FOOTER_IMAGE_XPATH}                                                   /html/body/div[3]/footer/div[1]/div[2]
+${FACEBOOK_IMAGE_IN_FOOTER_XPATH}                                       /html/body/div[3]/footer/div[1]/div[1]/a[1]/img
+${INSTAGRAM_IMAGE_IN_FOOTER_XPATH}                                      /html/body/div[3]/footer/div[1]/div[1]/a[2]/img
+${TWITTER_IMAGE_IN_FOOTER_XPATH}                                        /html/body/div[3]/footer/div[1]/div[1]/a[3]/img
+${LINKEDIN_IMAGE_IN_FOOTER_XPATH}                                       /html/body/div[3]/footer/div[1]/div[1]/a[4]/img
+${HOME_BUTTON_FOOTER_TEXT}                                              Home
+${OUR_TEAM_BUTTON_FOOTER_TEXT}                                          Our Team
+${CONTENT_BUTTON_FOOTER_TEXT}                                           Content

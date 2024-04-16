@@ -64,7 +64,7 @@ if [ "$response" -eq 1 ]; then
         echo "Invalid choice. Exiting..."
         echo "**************************"
         echo ""
-        return 1
+        exit 1
     fi
 
     # Get the selected test case

@@ -21,7 +21,7 @@ TEST_SUITES=(
 # ***************************** Main Script ****************************************
 
 clear
-echo " Welcome to the Our Web Developement & Testing Project "
+echo "Welcome to the Our Web Developement & Testing Project "
 current_time_and_date=$(date "+%T %F")
 echo "Time and date of This execution: $current_time_and_date"
  

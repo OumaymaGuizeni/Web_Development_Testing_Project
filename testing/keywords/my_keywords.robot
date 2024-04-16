@@ -453,7 +453,7 @@ Check The Presence Of Conclusion Text In Content Page
     Capture Element Screenshot      xpath=${CONCLUSION_TEXT_IN_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_CONCLUSION_TEXT_IN_CONTENT_PAGE_XPATH.png
 
 
-# keywords for footer
+# keywords for footer in our team page
 Check Image Facebook In Footer
     [Documentation]     this keyword Check the existance of the Text "Facebook Image" with the SeleniumLibrary keyword "Page Should Contain Image
 
@@ -514,4 +514,68 @@ Check Footer In Our Team page
     Check Text Our Team In Footer
     Check Text Content In Footer
     Capture Element Screenshot      xpath=${FOOTER_IMAGE_IN_OUR_TEAM_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_FOOTER_IMAGE_IN_OUR_TEAM_PAGE_XPATH.png
+    
+
+# keywords for footer Content Page
+
+Check Image Facebook In Footer In Our Content page
+    [Documentation]     this keyword Check the existance of the Text "Facebook Image" with the SeleniumLibrary keyword "Page Should Contain Image
+
+    Log     message=CHECKING_THE_PRESENCE_OF_FACEBOOK_IMAGE_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Page Should Contain Image       xpath=${FACEBOOK_IMAGE_IN_FOOTER_IN_OUR_CONTENT_PAGE_XPATH}        
+    Capture Element Screenshot      xpath=${FACEBOOK_IMAGE_IN_FOOTER_IN_OUR_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_FACEBOOK_IMAGE_IN_FOOTER_IN_OUR_CONTENT_PAGE_XPATH.png
+
+Check Image Instagram In Footer In Our Content page
+    [Documentation]     this keyword Check the existance of the Text "Instagram Image" with the SeleniumLibrary keyword "Page Should Contain Image
+
+    Log     message=CHECKING_THE_PRESENCE_OF_INSTAGRAM_IMAGE_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Page Should Contain Image       xpath=${INSTAGRAM_IMAGE_IN_FOOTER_IN_OUR_CONTENT_PAGE_XPATH}       
+    Capture Element Screenshot      xpath=${INSTAGRAM_IMAGE_IN_FOOTER_IN_OUR_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_INSTAGRAM_IMAGE_IN_FOOTER_IN_OUR_CONTENT_PAGE_XPATH.png
+
+Check Image Twitter In Footer In Our Content page
+    [Documentation]     this keyword Check the existance of the Text "TwitterImage" with the SeleniumLibrary keyword "Page Should Contain Image
+
+    Log     message=CHECKING_THE_PRESENCE_OF_TWITTER_IMAGE_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Page Should Contain Image       xpath=${TWITTER_IMAGE_IN_FOOTER_IN_OUR_CONTENT_PAGE_XPATH}        
+    Capture Element Screenshot      xpath=${TWITTER_IMAGE_IN_FOOTER_IN_OUR_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_TWITTER_IMAGE_IN_FOOTER_IN_OUR_CONTENT_PAGE_XPATH.png
+
+Check Image Linkedin In Footer In Our Content page
+    [Documentation]     this keyword Check the existance of the Text "Linkedin Image" with the SeleniumLibrary keyword "Page Should Contain Image
+
+    Log     message=CHECKING_THE_PRESENCE_OF_LINKEDIN_IMAGE_IN_CONTENT_PAGE        console=True
+    Run keyword and continue on failure     Page Should Contain Image       xpath=${LINKEDIN_IMAGE_IN_FOOTER_IN_OUR_CONTENT_PAGE_XPATH}        
+    Capture Element Screenshot      xpath=${LINKEDIN_IMAGE_IN_FOOTER_IN_OUR_CONTENT_PAGE_XPATH}         filename=Screenshots/${TEST NAME}/SCREENSHOT_LINKEDIN_IMAGE_IN_FOOTER_IN_OUR_CONTENT_PAGE_XPATH.png
+
+Check Text Home In Footer In Our Content page
+    [Documentation]     this keyword used "Home" keyword from SeleniumLibrary to check Text of FOOTER_BUTTON_TEXT
+     
+    Log     messgae=CHECKING_TEXT_HOME_IN_FOOTER                   console=True
+    Run keyword and continue on failure        Page Should Contain             ${HOME_BUTTON_FOOTER_IN_OUR_TEAM_CONTENT_TEXT} 
+    Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_HOME_BUTTON_FOOTER_IN_OUR_TEAM_CONTENT_TEXT.png
+
+Check Text Our Team In Footer In Our Content page
+    [Documentation]     this keyword used "Our Team" keyword from SeleniumLibrary to check Text of FOOTER_BUTTON_TEXT
+     
+    Log     messgae=CHECKING_TEXT_OUR_TEAM_IN_FOOTER                   console=True
+    Run keyword and continue on failure        Page Should Contain             ${OUR_TEAM_BUTTON_FOOTER_IN_OUR_CONTENT_PAGE_TEXT}
+    Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_OUR_TEAM_BUTTON_FOOTER_IN_OUR_CONTENT_PAGE_TEXT.png
+
+Check Text Content In Footer In Our Content page
+    [Documentation]     this keyword used "Content" keyword from SeleniumLibrary to check Text of FOOTER_BUTTON_TEXT
+     
+    Log     messgae=CHECKING_TEXT_CONTENT_IN_FOOTER                   console=True
+    Run keyword and continue on failure        Page Should Contain             ${CONTENT_BUTTON_FOOTER_IN_OUR_CONTENT_PAGE_TEXT}
+    Capture Page Screenshot     filename=Screenshots/${TEST NAME}/SCREENSHOT_CONTENT_BUTTON_FOOTER_IN_OUR_CONTENT_PAGE_TEXT.png
+
+Check Footer In Our Content page
+    [Documentation]     this keyword  check the Footer in OUR TEAM page
+
+    Check Image Facebook In Footer In Our Content page
+    Check Image Instagram In Footer In Our Content page
+    Check Image Twitter In Footer In Our Content page
+    Check Image Linkedin In Footer In Our Content page
+    Check Text Home In Footer In Our Content page
+    Check Text Our Team In Footer In Our Content page
+    Check Text Content In Footer In Our Content page
+    Capture Element Screenshot      xpath=${FOOTER_IMAGE_IN_OUR_CONTENT_PAGE_XPATH}        filename=Screenshots/${TEST NAME}/SCREENSHOT_FOOTER_IMAGE_IN_OUR_CONTENT_PAGE_XPATH.png
     

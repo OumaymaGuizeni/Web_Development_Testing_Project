@@ -20,6 +20,23 @@ TEST_SUITES=(
 # **********************************************************************************
 # ***************************** Main Script ****************************************
 
+python3 animation1.py &
+
+# Wait for 3 seconds
+sleep 10
+
+# Terminate the Python script
+pkill -f "python3 animation1.py"
+
+python3 animation.py &
+
+# Wait for 3 seconds
+sleep 10
+
+# Terminate the Python script
+pkill -f "python3 animation.py"
+
+
 clear
 echo "Welcome to the Our Web Developement & Testing Project "
 current_time_and_date=$(date "+%T %F")
